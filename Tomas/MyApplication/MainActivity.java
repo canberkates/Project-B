@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                String twitter = "https://twitter.com/Hsrotterdam";
+                String twitter = "https://twitter.com/hsrotterdam";
                 Uri webadres = Uri.parse(twitter);
                 Intent gotoTwitter = new Intent(Intent.ACTION_VIEW, webadres);
                 if (gotoTwitter.resolveActivity(getPackageManager()) != null) {
