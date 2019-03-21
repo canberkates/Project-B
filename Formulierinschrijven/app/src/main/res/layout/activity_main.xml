@@ -92,9 +92,9 @@
         android:id="@+id/signUpButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
         android:text="@string/verstuur"
-        android:textColor="@color/white"
-        android:background="@color/colorAccent"/>
+        android:textColor="@color/white" />
 
 
 </LinearLayout>
