@@ -10,36 +10,23 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="@string/meld_je_nu_aan_voor_een_open_dag"
-        android:textColor="@color/white"
-        android:background="@color/hrrood"
+        android:textColor="@color/colorAccent"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textGender"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/geslacht"
-        android:textColor="@color/black" />
-
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
         android:id="@+id/textName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/naam"
         android:textColor="@color/black" />
 
     <EditText
         android:id="@+id/inputName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textLastname"
@@ -50,11 +37,11 @@
 
     <EditText
         android:id="@+id/inputLastname"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textPhone"
@@ -65,11 +52,11 @@
 
     <EditText
         android:id="@+id/inputPhone"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints=""
         android:ems="10"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textMail"
@@ -80,11 +67,11 @@
 
     <EditText
         android:id="@+id/inputMail"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints=""
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textDate"
@@ -94,12 +81,12 @@
         android:textColor="@color/black" />
 
     <EditText
-        android:id="@+id/inputDateBirth"
-        android:layout_width="wrap_content"
+        android:id="@+id/inputDate"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints=""
         android:ems="10"
-        android:inputType="date" />
+        android:inputType="date"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/signUpButton"

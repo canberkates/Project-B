@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Open Dag</string>
+    <string name="meld_je_nu_aan_voor_een_open_dag">Meld je nu aan voor een open dag!</string>
+    <string name="geslacht">Geslacht:</string>
+    <string name="email">Email:</string>
+    <string name="naam">Naam:</string>
+    <string name="telefoonnummer">Telefoonnummer:</string>
+    <string name="achternaam">Achternaam:</string>
+    <string name="datum">Geboortedatum:</string>
+    <string name="verstuur">Verstuur</string>
+    <string-array name="numbers">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+    </string-array>
 </resources>
