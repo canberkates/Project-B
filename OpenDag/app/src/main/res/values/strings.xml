@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Open Dag</string>
+    <string name="title_activity_opendag_detail">OpendagDetail</string>
+    <string name="detail_title">Programma open dag</string>
+    <string name="detail_klassikale_voorlichting">Klassikale voorlichting</string>
+    <string name="detail_voorbeelden_projecten">Voorbeelden van projecten</string>
+    <string name="detail_programma_opendag">Docenten en/of studenten geven een korte voorlichting over de opleiding in een lokaal. De voorlichting duurt ca. 45 minuten.</string>
+    <string name="detail_voorlichting_data">Docenten en/of studenten geven een korte voorlichting over de opleiding in een lokaal. De voorlichting duurt ca. 45 minuten.\n\n
+
+16.45 uur\n
+17.30 uur\n
+18.15 uur\n
+18.45 uur\n</string>
+    <string name="detail_project_title">Voorbeelden van projecten</string>
+    <string name="detail_project_data">Studenten Informatica hebben het studielandschap op de 4e etage ingericht met voorbeelden van hun projecten en vertellen je hier graag iets over.\n
+
+    16.00 - 20.00 uur doorlopend</string>
+    <string name="detail_workshop_title">Workshops</string>
+    <string name="detail_workshop_data">Je kunt een workshop volgen. Je ervaart dan zelf wat je onder andere leert tijdens de opleiding.\n
+
+16.00 - 20.00 uur doorlopend</string>
+    <string name="detail_overige_title">Overige activiteiten</string>
+
+
+
+
 </resources>
