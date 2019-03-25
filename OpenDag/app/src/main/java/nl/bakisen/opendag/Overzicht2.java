@@ -19,11 +19,11 @@ public class Overzicht2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_overzicht2);
-        txt1 = (TextView) findViewById(R.id.button1txt);
-        btn1 = (Button) findViewById(R.id.button1);
-        btn2 = (Button) findViewById(R.id.button2);
-        btn3 = (Button) findViewById(R.id.button3);
-        btn4 = (Button) findViewById(R.id.button4);
+        txt1 = (TextView) findViewById(R.id.textoverigeinfo);
+        btn1 = (Button) findViewById(R.id.buttonstudievoorlichting);
+        btn2 = (Button) findViewById(R.id.buttoninschrijving);
+        btn3 = (Button) findViewById(R.id.buttontoelatingsexamen);
+        btn4 = (Button) findViewById(R.id.buttonstudentaanzet);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

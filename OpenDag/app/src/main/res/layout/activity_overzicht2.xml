@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/button1txt"
+        android:id="@+id/textoverigeinfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -91,7 +91,7 @@
         android:textSize="17sp" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/buttonstudievoorlichting"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
@@ -102,7 +102,7 @@
         android:textSize="11sp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonstudentaanzet"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
@@ -113,7 +113,7 @@
         android:textSize="11sp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttontoelatingsexamen"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
@@ -124,7 +124,7 @@
         android:textSize="11sp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttoninschrijving"
         android:layout_width="108dp"
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
