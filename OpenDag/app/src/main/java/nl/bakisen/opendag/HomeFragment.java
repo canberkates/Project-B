@@ -16,31 +16,24 @@ public class HomeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
-    }
 
-    private Button opendag1overzicht;
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.O);
-
-        opendag1overzicht = (Button) getView().findViewById((R.id.opendag1));
-        opendag1overzicht.setOnClickListener(new View.OnClickListener() {
+        Button opendag1 = (Button) view.findViewById(R.id.opendag1);
+        opendag1.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-                openOverzicht2();
+            public void onClick(View v){
+                Intent in = new Intent(getActivity(), Overzicht2.class);
+                startActivity(in);
 
             }
+
         });
+
+        return view;
+
     }
 
-    public void openOverzicht2() {
-        Intent intent = new Intent(getActivity(),Overzicht2.class);
-        startActivity(intent);
-    }
+
 
 }
