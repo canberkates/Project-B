@@ -19,7 +19,7 @@
             android:text="@string/meld_je_nu_aan_voor_een_open_dag"
             android:textColor="@color/white"
             android:background="@color/hrrood"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/textGender"
@@ -34,7 +34,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="text"
+            android:autofillHints="" />
 
         <TextView
             android:id="@+id/textName"
