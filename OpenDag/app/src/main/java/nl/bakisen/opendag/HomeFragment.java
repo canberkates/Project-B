@@ -26,7 +26,7 @@ public class HomeFragment extends Fragment {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_overzicht);
+        setContentView(R.layout.O);
 
         opendag1overzicht = (Button) getView().findViewById((R.id.opendag1));
         opendag1overzicht.setOnClickListener(new View.OnClickListener() {
