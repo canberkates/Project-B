@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Open Dag</string>
+<<<<<<< HEAD
     <string name="title_activity_opendag_detail">OpendagDetail</string>
     <string name="detail_title">Programma open dag</string>
     <string name="detail_klassikale_voorlichting">Klassikale voorlichting</string>
@@ -22,4 +23,6 @@
     <string name="detail_overige_title">Overige activiteiten</string>
 
 
+=======
+>>>>>>> parent of c9a08ad... Detail overzicht layout
 </resources>
