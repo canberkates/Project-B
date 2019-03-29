@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,14 +19,13 @@ public class OverzichtFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_overzicht, container, false);
 
         Button opendag1 = (Button) view.findViewById(R.id.opendag1);
-        opendag1.setOnClickListener(new View.OnClickListener(){
+        opendag1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Intent in = new Intent(getActivity(), OverzichtOpenDag1Fragment.class);
-                startActivity(in);
-
+            public void onClick(View v) {
+                FragmentTransaction fropendag1 = getFragmentManager().beginTransaction();
+                fropendag1.replace(R.id.fragment_container, new OverzichtOpenDag1Fragment());
+                fropendag1.commit();
             }
-
         });
 
         return view;
