@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Opleidingen" />
-        <activity android:name=".Overzicht2" />
+        <activity android:name=".OverzichtOpenDag1" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Overzicht">
+        <activity android:name=".OverzichtFragment">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
