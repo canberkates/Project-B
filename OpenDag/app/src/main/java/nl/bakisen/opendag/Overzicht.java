@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Overzicht extends AppCompatActivity {
-    private Button button;
+    private Button opendag1overzicht;
 
 
 
@@ -16,8 +16,8 @@ public class Overzicht extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_overzicht);
 
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        opendag1overzicht = (Button) findViewById(R.id.button);
+        opendag1overzicht.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openOverzicht2();
