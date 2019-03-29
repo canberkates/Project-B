@@ -9,11 +9,14 @@
     <string name="datum">Geboortedatum:</string>
     <string name="verstuur">Verstuur</string>
     <string name="vooropleiding">Wat is je vooropleiding ?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!--<string name="spinnerName">GANG GANG</string>-->
     <!--<array name="geslacht">-->
-        <!--<item>123</item>-->
-        <!--<item>1234</item>-->
-        <!--<item>12345</item>-->
+    <!--<item>123</item>-->
+    <!--<item>1234</item>-->
+    <!--<item>12345</item>-->
     <!--</array>-->
 
 </resources>
