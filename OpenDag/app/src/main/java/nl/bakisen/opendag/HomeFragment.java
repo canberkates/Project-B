@@ -24,7 +24,9 @@ public class HomeFragment extends Fragment {
         opleidingen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction fropleidingen = getFragmentManager()
+                FragmentTransaction fropleidingen = getFragmentManager().beginTransaction();
+                fropleidingen.replace(R.id.fragment_container, new OpleidingenFragment());
+                fropleidingen.commit();
 
             }
         });
