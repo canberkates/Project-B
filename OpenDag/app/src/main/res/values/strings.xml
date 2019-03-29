@@ -9,11 +9,11 @@
     <string name="datum">Geboortedatum:</string>
     <string name="verstuur">Verstuur</string>
     <string name="vooropleiding">Wat is je vooropleiding ?</string>
-    <string name="spinnerName">GANG GANG</string>
-    <array name="geslacht">
-        <item>123</item>
-        <item>1234</item>
-        <item>12345</item>
-    </array>
+    <!--<string name="spinnerName">GANG GANG</string>-->
+    <!--<array name="geslacht">-->
+        <!--<item>123</item>-->
+        <!--<item>1234</item>-->
+        <!--<item>12345</item>-->
+    <!--</array>-->
 
 </resources>

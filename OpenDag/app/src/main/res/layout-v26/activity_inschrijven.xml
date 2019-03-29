@@ -36,13 +36,6 @@
             android:ems="10"
             android:inputType="text" />
 
-        <Spinner
-            android:id="@+id/geslacht"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/geslacht"
-            android:prompt="@string/spinnerName" />
-
         <TextView
             android:id="@+id/textName"
             android:layout_width="wrap_content"
@@ -133,7 +126,7 @@
             android:inputType="phone" />
 
         <Button
-            android:id="@+id/btnSubmit"
+            android:id="@+id/signUpButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/verstuur"
