@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:theme="@style/AppTheme">
         <activity
             android:name=".OpendagDetail"
@@ -16,6 +17,8 @@
             android:theme="@style/AppTheme.NoActionBar">
 
 =======
+=======
+>>>>>>> parent of c9a08ad... Detail overzicht layout
         android:theme="@style/AppTheme" >
         <activity android:name=".MainActivity" >
             <intent-filter>
@@ -23,6 +26,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+<<<<<<< HEAD
+>>>>>>> parent of c9a08ad... Detail overzicht layout
+=======
 >>>>>>> parent of c9a08ad... Detail overzicht layout
         </activity>
         <activity android:name=".MainActivity"></activity>
