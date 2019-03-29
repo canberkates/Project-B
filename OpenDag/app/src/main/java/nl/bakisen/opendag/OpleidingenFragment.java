@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class Opleidingen extends Fragment {
+public class OpleidingenFragment extends Fragment {
 
     @Nullable
     @Override

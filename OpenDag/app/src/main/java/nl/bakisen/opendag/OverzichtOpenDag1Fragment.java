@@ -6,9 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-public class Overzicht2 extends AppCompatActivity {
+public class OverzichtOpenDag1Fragment extends AppCompatActivity {
     TextView txt1;
     Button btn1, btn2, btn3, btn4;
     String Studievoorlichting = "Studievoorlichting is hét aanspreekpunt voor informatie over alle opleidingen, toelatingseisen en de aanmeldprocedure. Ook is hier praktische informatie te krijgen over toelatingsexamens, voorbereidingscursussen, buitenlandse diploma’s, proefstuderen en studiekosten. De studievoorlichters kunnen je tevens helpen als je nog twijfels hebt over je studiekeuze, bijvoorbeeld met een workshop of een individueel studiekeuzetraject.";
@@ -18,7 +16,7 @@ public class Overzicht2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_overzicht2);
+        setContentView(R.layout.fragment_overzichtopendag1);
         txt1 = (TextView) findViewById(R.id.textoverigeinfo);
         btn1 = (Button) findViewById(R.id.buttonstudievoorlichting);
         btn2 = (Button) findViewById(R.id.buttoninschrijving);
