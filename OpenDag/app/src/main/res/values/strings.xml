@@ -4,4 +4,7 @@
     <string name="opendag1">4 april 2019 | 16.00 - 20.00 uur </string>
     <string name="Overzicht">Overzicht Open Dagen</string>
     <string name="opleidingen">Overzicht Opleidingen</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
