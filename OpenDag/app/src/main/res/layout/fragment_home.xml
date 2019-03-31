@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    tools:context=".OverzichtFragment">
 
+
+
+    <Button
+        android:id="@+id/opendag1"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:text="@string/opendag1"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/opleidingen"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="430dp"
+        android:text="@string/opleidingen"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/OpkomendeDag"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="0dp"
+        android:text="Opkomende Opendag"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/berichtwelkom"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/welkomstbericht"
+        android:textAlignment="center"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/BeschikbareOpleidingen"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="0dp"
+        android:text="Beschikbare Opleidingen"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
 
 
 
