@@ -57,6 +57,12 @@
     <string name="informatie_openingstijden">Openingstijden:</string>
     <string name="informatie_openingstijden_gegevens1">Maandag \nDinsdag \nWoensdag \nDonderdag \nVrijdag \nZaterdag \nZondag \n</string>
     <string name="informatie_openingstijden_gegevens2">07:30 - 22:00 uur\n07:30 - 22:00 uur\n07:30 - 22:00 uur\n07:30 - 22:00 uur\n07:30 - 22:00 uur\nGesloten\nGesloten</string>
+    <string name="btnbeganegrond">Begane grond</string>
+    <string name="btnetage1">Eerste etage</string>
+    <string name="btnetage2">Tweede etage</string>
+    <string name="btnetage3">Derde etage</string>
+    <string name="btnetage4">Vierde etage</string>
+    <string name="btnetage5">Vijfde etage</string>
 
 
 </resources>
