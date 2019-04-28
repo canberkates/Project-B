@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".opendagenlijstFragment"></activity>
+        <activity android:name=".InschrijvenFragment"></activity>
+        <activity android:name=".opendagenlijstFragment" />
         <activity android:name=".OverzichtOpenDag1Fragment" />
         <activity android:name=".OverzichtFragment" />
         <activity android:name=".OpleidingenFragment" />

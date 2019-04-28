@@ -48,10 +48,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new OverzichtFragment()).commit();
                 break;
-            case R.id.nav_info:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new InformatieFragment()).commit();
-                break;
             case R.id.nav_contact:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ContactFragment()).commit();
