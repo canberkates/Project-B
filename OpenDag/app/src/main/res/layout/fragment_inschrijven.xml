@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InschrijvenFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/meld_je_nu_aan_voor_een_open_dag"
+            android:textColor="@color/white"
+            android:background="@color/hrrood"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/geslacht"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/inputGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/naam"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/achternaam"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/inputLastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/inputMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/datum"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/inputDateBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vooropleiding"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/inputEducation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/telefoonnummer"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/inputPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verstuur"
+            android:textColor="@color/white"
+            android:background="@color/hrrood"/>
+
+
+    </LinearLayout>
+</ScrollView>

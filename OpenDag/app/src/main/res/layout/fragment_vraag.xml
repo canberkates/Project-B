@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VraagFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/vraag_titel"
+            android:textColor="@color/white"
+            android:background="@color/hrrood"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volledige_naam"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+        android:id="@+id/textMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/inputMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/text_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vraag"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/inputQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:autofillHints="johnsnow@gmail.com"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verstuur"
+            android:textColor="@color/white"
+            android:background="@color/hrrood"/>
+
+    </LinearLayout>
+</ScrollView>
