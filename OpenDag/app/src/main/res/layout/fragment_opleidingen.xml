@@ -1,9 +1,205 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OpleidingenFragment">
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/opleidingen"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Business IT en Management"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Als BIM’er leg je verbanden in de organisatie tussen de mensen, de bedrijfsprocessen en de ICT. Je zorgt ervoor dat data verzameld en opgeslagen worden en toegankelijk zijn voor de betrokken mensen. "
+            android:textColor="@color/hrokleur" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Communicatie deeltijd" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/hrokleur"
+            android:text="Je wilt vanuit je huidige functie als marketingmedewerker of communicatieadviseur graag doorgroeien naar een managementfunctie, maar daarvoor wordt wel een bachelordiploma gevraagd. " />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Informatica deeltijd" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/hrokleur"
+            android:text="Ben jij toe aan de volgende stap in je loopbaan waarbij je je onder andere bezig houdt met softwaresystemen, informatiesystemen of telematicatoepassingen? " />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Business IT en Management voltijd" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/hrokleur"
+            android:text="Als BIM’er sla je de brug tussen ICT-techniek, organisaties en medewerkers. Bij elke verandering in het bedrijfsproces houd je rekening met deze drie partijen. " />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Communicatie voltijd" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/hrokleur"
+            android:text="Heb je een scherp oog en oor voor de verhalen van mensen en merken? Ben je creatief met tekst en beeld en gefascineerd door de wereld van media? Dan is de opleiding Communicatie iets voor jou! " />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Communication and Multimedia Design voltijd" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/hrokleur"
+            android:text="Als CMD’er ontwerp je interactieve producten en diensten. Dat doe je met een creatief team voor échte opdrachtgevers in Studio’s en Labs. " />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Creative Media and Game Technologies voltijd" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/hrokleur"
+            android:text="Creatieve technologen bedenken en ontwikkelen innovatieve digitale producten, waarbij de gebruiker centraal staat. " />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Informatica voltijd" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/hrokleur"
+            android:text="We leiden je op tot software engineer. Je gaat aan de slag met het ontwikkelen van software voor diverse toepassingen. Je bent in staat complexe ICT-systemen te analyseren, ontwerpen en implementeren. " />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Technische Informatica voltijd" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/hrokleur"
+            android:text="Als technisch informaticus werk je aan moderne ICT-systemen waarbij hard- en software geïntegreerd zijn. Dankzij je kennis van programmeren en hardware kun je juist op het snijpunt daarvan opereren. " />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Vormgeving voltijd" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/hrokleur"
+            android:text="Je kiest een van negen vakstudies: Advertising, Animatie, Audiovisueel ontwerpen, Grafisch ontwerpen (ook Engels), Illustratie, Ruimtelijk ontwerpen, Lifestyle (ook Engels), Mode en Product Design. " />
+
+
+    </LinearLayout>
+</ScrollView>
