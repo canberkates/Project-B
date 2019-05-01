@@ -27,9 +27,9 @@ public class InschrijvenFragment extends Fragment {
                 try {
                     GMailSender sender = new GMailSender("inschrijvenopendag@gmail.com", "Inschrijvenopendag123");
                     sender.sendMail("Inschrijving",
-                            Student.getGender(),
+                            "Wow dit is cool",
                             "inschrijvenopendag@gmail.com",
-                            "k.cngz38@hotmail.com");
+                            "k.cngz38@gmail.com");
                     Log.e("tag", "Email send");
                 } catch (Exception e) {
                     Log.e("SendMail", e.getMessage(), e);
