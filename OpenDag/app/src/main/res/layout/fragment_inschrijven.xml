@@ -22,11 +22,23 @@
             android:textSize="20sp"/>
 
         <TextView
+            android:id="@+id/textPersoonsgegevens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persoonlijke gegevens"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:background="#e0e0e0"
+            android:gravity="center_horizontal"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
             android:id="@+id/textGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/geslacht"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
 
 
         <EditText
@@ -35,14 +47,18 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:autofillHints="" />
+            android:autofillHints=""
+            android:hint="M/V"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"/>
 
         <TextView
             android:id="@+id/textName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/naam"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
 
         <EditText
             android:id="@+id/inputName"
@@ -50,14 +66,18 @@
             android:layout_height="wrap_content"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:hint="Klaas"
+            android:inputType="textPersonName"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"/>
 
         <TextView
             android:id="@+id/textLastname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/achternaam"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
 
         <EditText
             android:id="@+id/inputLastname"
@@ -65,29 +85,18 @@
             android:layout_height="wrap_content"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="textPersonName" />
-
-        <TextView
-            android:id="@+id/textMail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/email"
-            android:textColor="@color/black" />
-
-        <EditText
-            android:id="@+id/inputMail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:ems="10"
-            android:inputType="textEmailAddress" />
+            android:hint="Wieresma"
+            android:inputType="textPersonName"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"/>
 
         <TextView
             android:id="@+id/textDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/datum"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
 
         <EditText
             android:id="@+id/inputDateBirth"
@@ -95,28 +104,48 @@
             android:layout_height="wrap_content"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="date" />
+            android:hint="01/01/1999"
+            android:inputType="date"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"/>
 
         <TextView
-            android:id="@+id/textEducation"
+            android:id="@+id/textContactgegevens"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/vooropleiding"
-            android:textColor="@color/black" />
+            android:text="Contactgegevens"
+            android:textColor="@color/black"
+            android:background="#e0e0e0"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginVertical="5dp"/>
+
+        <TextView
+            android:id="@+id/textMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
 
         <EditText
-            android:id="@+id/inputEducation"
+            android:id="@+id/inputMail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
-            android:inputType="text" />
+            android:hint="jaap12@gmail.com"
+            android:inputType="textEmailAddress"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"/>
 
         <TextView
             android:id="@+id/textPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/telefoonnummer"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
 
         <EditText
             android:id="@+id/inputPhone"
@@ -124,15 +153,39 @@
             android:layout_height="wrap_content"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="phone" />
+            android:hint="0612345678"
+            android:inputType="phone"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"/>
+
+        <TextView
+            android:id="@+id/textEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vooropleiding"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
+
+        <EditText
+            android:id="@+id/inputEducation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Informatica"
+            android:inputType="text"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"/>
 
         <Button
             android:id="@+id/signUpButton"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:width="200dp"
             android:text="@string/verstuur"
             android:textColor="@color/white"
-            android:background="@color/hrrood"/>
+            android:background="@color/hrrood"
+            android:layout_marginVertical="15dp"/>
 
 
     </LinearLayout>

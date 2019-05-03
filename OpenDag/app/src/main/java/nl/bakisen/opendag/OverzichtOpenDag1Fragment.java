@@ -12,10 +12,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import java.util.Calendar;
 
 public class OverzichtOpenDag1Fragment extends Fragment {
     int counter = 1;
-    Button btn1, btn2, btn3, btn4, revealButton, aanmelden;
+    Button btn1, btn2, btn3, btn4, revealButton, aanmelden, agenda;
     ImageButton instaKnop, faceKnop, twitterKnop, linkedKnop;
     TextView txt1;
     String Studievoorlichting = "Studievoorlichting is hét aanspreekpunt voor informatie over alle opleidingen, toelatingseisen en de aanmeldprocedure. Ook is hier praktische informatie te krijgen over toelatingsexamens, voorbereidingscursussen, buitenlandse diploma’s, proefstuderen en studiekosten. De studievoorlichters kunnen je tevens helpen als je nog twijfels hebt over je studiekeuze, bijvoorbeeld met een workshop of een individueel studiekeuzetraject.";
@@ -90,6 +91,33 @@ public class OverzichtOpenDag1Fragment extends Fragment {
                 btn1.setVisibility(View.VISIBLE);
             }
         });
+
+        agenda = (Button) view.findViewById(R.id.calender_button);
+        agenda.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Calendar calendarEvent = Calendar.getInstance();
+                Calendar beginTime = calendarEvent.getInstance();
+                long startMillis = 0;
+                long endMillis = 0;
+                beginTime.set(2019,10,2,16,55);
+                startMillis = beginTime.getTimeInMillis();
+                Calendar endTime = calendarEvent.getInstance();
+                endTime.set(2019,10,2,20,00);
+                endMillis = endTime.getTimeInMillis();
+                Intent i = new Intent(Intent.ACTION_EDIT);
+                i.setType("vnd.android.cursor.item/event");
+                i.putExtra("beginTime", startMillis);
+                i.putExtra("rule", "FREQ=YEARLY");
+                i.putExtra("endTime", endMillis);
+                i.putExtra("title", "Open dag Hogeschool Rotterdam");
+                i.putExtra("eventLocation", "Wijnhaven 107");
+                startActivity(i);
+            }
+
+        });
+
 
 //        naar volgende fragment
         aanmelden = (Button) view.findViewById(R.id.aanmeldknop_opendag);
