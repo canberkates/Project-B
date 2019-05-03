@@ -98,7 +98,7 @@ public class OverzichtOpenDag1Fragment extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction fraanmeldenOpendag = getFragmentManager().beginTransaction();
                 fraanmeldenOpendag.replace(R.id.fragment_container, new InschrijvenFragment());
-                fraanmeldenOpendag.commit();
+                fraanmeldenOpendag.addToBackStack(null).commit();
             }
         });
 

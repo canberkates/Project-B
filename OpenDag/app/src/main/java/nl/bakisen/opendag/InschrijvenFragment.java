@@ -57,7 +57,7 @@ public class InschrijvenFragment extends Fragment {
 
                 FragmentTransaction fraanmeldingklaar = getFragmentManager().beginTransaction();
                 fraanmeldingklaar.replace(R.id.fragment_container, new HomeFragment());
-                fraanmeldingklaar.commit();
+                fraanmeldingklaar.addToBackStack(null).commit();
             }
         });
 

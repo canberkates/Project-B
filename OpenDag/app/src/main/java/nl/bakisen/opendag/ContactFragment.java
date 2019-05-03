@@ -25,7 +25,7 @@ import android.widget.TextView;
 public class ContactFragment extends Fragment {
     Button btnbeganegrond, btnetage1, btnetage2, btnetage3, btnetage4, btnetage5;
     ImageView plattegrond;
-    int [] images = new int [] {R.drawable.dice1, R.drawable.dice2, R.drawable.dice3, R.drawable.dice4, R.drawable.dice5, R.drawable.dice6};
+    int [] images = new int [] {R.drawable.beganegrond, R.drawable.etage1, R.drawable.etage2, R.drawable.etage3, R.drawable.etage4, R.drawable.etage5};
 
 
 
