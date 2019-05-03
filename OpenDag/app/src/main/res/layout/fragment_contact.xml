@@ -137,7 +137,7 @@
         android:id="@+id/plattegrond"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:srcCompat="@drawable/dice1" />
+        tools:srcCompat="@drawable/beganegrond" />
 
 
 </LinearLayout>
