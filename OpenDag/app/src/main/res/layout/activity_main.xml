@@ -6,20 +6,41 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity"
     tools:openDrawer="start">
 
     <LinearLayout
+        android:id="@+id/overtrefjezelf"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/hr"
+            android:scaleType="fitXY">
+
+            <ImageButton
+                android:id="@+id/homeButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/opendaglogo"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp" />
+
+
+        </LinearLayout>
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:layout_marginTop="100dp"
             android:background="@color/hrokleur"
             android:elevation="4dp"
             android:theme="@style/AppTheme.NoActionBar"

@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import java.util.Calendar;
 
 public class OverzichtOpenDag1Fragment extends Fragment {
@@ -118,7 +119,6 @@ public class OverzichtOpenDag1Fragment extends Fragment {
 
         });
 
-
 //        naar volgende fragment
         aanmelden = (Button) view.findViewById(R.id.aanmeldknop_opendag);
         aanmelden.setOnClickListener(new View.OnClickListener() {
@@ -126,7 +126,7 @@ public class OverzichtOpenDag1Fragment extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction fraanmeldenOpendag = getFragmentManager().beginTransaction();
                 fraanmeldenOpendag.replace(R.id.fragment_container, new InschrijvenFragment());
-                fraanmeldenOpendag.commit();
+                fraanmeldenOpendag.addToBackStack(null).commit();
             }
         });
 
@@ -140,6 +140,7 @@ public class OverzichtOpenDag1Fragment extends Fragment {
             public void onClick(View v) {
                 String instagram = "https://www.instagram.com/hogeschoolrotterdam/";
                 Uri webadres = Uri.parse(instagram);
+
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(webadres);
                 getActivity().startActivity(i);

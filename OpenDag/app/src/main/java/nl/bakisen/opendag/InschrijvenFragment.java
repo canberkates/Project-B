@@ -4,7 +4,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -18,11 +17,14 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import nl.bakisen.opendag.Domain.Aanmelding;
+import nl.bakisen.opendag.Domain.GMailSender;
 
 public class InschrijvenFragment extends Fragment {
 
     String gender, name, lastName, phone, email, education, date;
     Aanmelding newAanmelding;
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,8 +39,6 @@ public class InschrijvenFragment extends Fragment {
         final EditText inputMail = view.findViewById(R.id.inputMail);
         final EditText inputDateBirth = view.findViewById(R.id.inputDateBirth);
         final EditText inputEducation = view.findViewById(R.id.inputEducation);
-
-
 
         Button signUpButton;
 
@@ -85,5 +85,4 @@ public class InschrijvenFragment extends Fragment {
 
         return view;
     }
-
 }

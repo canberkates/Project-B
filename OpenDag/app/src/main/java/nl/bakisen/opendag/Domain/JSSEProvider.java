@@ -1,7 +1,13 @@
-package nl.bakisen.opendag;
+package nl.bakisen.opendag.Domain;
 
 import java.security.AccessController;
 import java.security.Provider;
+
+
+// https://stackoverflow.com/questions/2020088/sending-email-in-android-using-javamail-api-without-using-the-default-built-in-a code gebruikt om mail te versturen. geld voor de volgende classes:
+// JSSEProvider, GMailSender, VraagFragment, InschrijvenFragment
+// https://stackoverflow.com/questions/14374578/using-asynctask-to-send-android-email gebruikt om een asynctask te maken, zodat de mail verstuurd werd. geld voor de volgende classes:
+// InschrijvenFragment, VraagFragment
 
 public final class JSSEProvider extends Provider {
 

@@ -3,7 +3,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="beschrijvingopendag">Klassikale overzicht, voorbeelden van projecten,, workshops, overige activiteiten</string>
-    <string name="opendag1">2 november 2019 | 17.00 - 20.00 uur </string>
+    <string name="opendag1">4 april 2019 | 16.00 - 20.00 uur </string>
     <string name="Overzicht">Overzicht Open Dagen</string>
     <string name="opleidingen">Overzicht Opleidingen</string>
     <string name="welkomstbericht">Welkom bij de open dagen app, medemogelijk gemaakt door de studenten van de opleiding Informatica</string>
@@ -11,7 +11,7 @@
     <string name="detail_aanmelden">Meld je nu aan voor deze open dag  </string>
     <string name="detail_informatie">Zie meer informatie over deze open dag</string>
     <string name="detail_intro">Een bacheloropleiding is een vierjarige opleiding op hbo-niveau. Na het behalen van je diploma ga je werken of studeer je verder aan een masteropleiding.</string>
-    <string name="detail_title">CMI | 2 november 2019 | 17:00 ~ 20:00</string>
+    <string name="detail_title">CMI | 11 april 2019 | 16:00 ~ 20:00</string>
     <string name="detail_infotitle">Programma open dag</string>
     <string name="detail_klassikale_voorlichting">Klassikale voorlichting</string>
 
@@ -57,6 +57,12 @@
     <string name="informatie_openingstijden">Openingstijden:</string>
     <string name="informatie_openingstijden_gegevens1">Maandag \nDinsdag \nWoensdag \nDonderdag \nVrijdag \nZaterdag \nZondag \n</string>
     <string name="informatie_openingstijden_gegevens2">07:30 - 22:00 uur\n07:30 - 22:00 uur\n07:30 - 22:00 uur\n07:30 - 22:00 uur\n07:30 - 22:00 uur\nGesloten\nGesloten</string>
+    <string name="btnbeganegrond">Begane grond</string>
+    <string name="btnetage1">Eerste etage</string>
+    <string name="btnetage2">Tweede etage</string>
+    <string name="btnetage3">Derde etage</string>
+    <string name="btnetage4">Vierde etage</string>
+    <string name="btnetage5">Vijfde etage</string>
 
 
 </resources>

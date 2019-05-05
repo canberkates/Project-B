@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,7 +16,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/informatie_titel"
         android:textStyle="bold"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -77,12 +81,71 @@
 
     </LinearLayout>
 
+    <HorizontalScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnbeganegrond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/btnbeganegrond"
+            android:background="@color/buttonColor"/>
+
+        <Button
+            android:id="@+id/btnetage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/btnetage1"
+            android:background="@color/buttonColor"/>
+
+        <Button
+            android:id="@+id/btnetage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/btnetage2"
+            android:background="@color/buttonColor"/>
+
+        <Button
+            android:id="@+id/btnetage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/btnetage3"
+            android:background="@color/buttonColor"/>
+
+        <Button
+            android:id="@+id/btnetage4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/btnetage4"
+            android:background="@color/buttonColor"/>
+
+        <Button
+            android:id="@+id/btnetage5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/btnetage5"
+            android:background="@color/buttonColor"/>
+        </LinearLayout>
+    </HorizontalScrollView>
 
 
-
-
-
-
+    <ImageView
+        android:id="@+id/plattegrond"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        tools:srcCompat="@drawable/beganegrond" />
 
 
 </LinearLayout>

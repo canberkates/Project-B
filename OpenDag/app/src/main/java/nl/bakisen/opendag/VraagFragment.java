@@ -13,11 +13,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import nl.bakisen.opendag.Domain.Aanmelding;
+import nl.bakisen.opendag.Domain.GMailSender;
 import nl.bakisen.opendag.Domain.Vraag;
 
 public class VraagFragment extends Fragment {
-
 
     String firstName, lastName, email, question;
     Vraag newVraag;

@@ -1,4 +1,4 @@
-package nl.bakisen.opendag;
+package nl.bakisen.opendag.Domain;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
