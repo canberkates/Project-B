@@ -36,18 +36,31 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/calender_button"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="Zet het nu op je agenda"
+                android:textAlignment="textStart"
+                android:background="@color/buttonColor"
+                android:layout_marginTop="10dp"/>
+
+            <Button
                 android:id="@+id/aanmeldknop_opendag"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:text="@string/detail_aanmelden"
-                android:textAlignment="textStart"/>
+                android:textAlignment="textStart"
+                android:background="@color/buttonColor"
+                android:layout_marginTop="10dp"/>
 
             <Button
                 android:id="@+id/informatie_toggle"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:text="@string/detail_informatie"
-                android:textAlignment="textStart"/>
+                android:textAlignment="textStart"
+                android:background="@color/buttonColor"
+                android:layout_marginTop="10dp"/>
 
         </LinearLayout>
 
