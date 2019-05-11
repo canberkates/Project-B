@@ -21,4 +21,6 @@
     <color name="black">#000000</color>
     <color name="hrrood">#CB0133</color>
     <color name="hrokleur">#DD0204</color>
+    <color name="buttonColor">#fc3538</color>
+
 </resources>

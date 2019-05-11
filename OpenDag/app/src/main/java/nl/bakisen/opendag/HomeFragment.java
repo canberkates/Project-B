@@ -26,7 +26,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction fropleidingen = getFragmentManager().beginTransaction();
                 fropleidingen.replace(R.id.fragment_container, new OpleidingenFragment());
-                fropleidingen.commit();
+                fropleidingen.addToBackStack(null).commit();
 
             }
         });
@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction fropendag1 = getFragmentManager().beginTransaction();
                 fropendag1.replace(R.id.fragment_container, new OverzichtOpenDag1Fragment());
-                fropendag1.commit();
+                fropendag1.addToBackStack(null).commit();
             }
         });
 
