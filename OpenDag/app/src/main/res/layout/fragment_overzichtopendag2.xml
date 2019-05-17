@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".OverzichtOpenDag1Fragment"
+    tools:context=".OverzichtOpenDag2Fragment"
     android:background="@color/white">
 
     <LinearLayout
@@ -18,7 +18,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:text="@string/detail_title1"
+            android:text="@string/detail_title2"
             android:textStyle="bold"
             android:textSize="20sp"/>
 

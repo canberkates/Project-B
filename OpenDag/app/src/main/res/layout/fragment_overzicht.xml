@@ -5,7 +5,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OverzichtFragment">
+    tools:context=".OverzichtFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="410dp"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="646dp"
+        android:layout_marginEnd="2dp"
+        android:text="@string/beschrijvingopendag"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="410dp"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="1dp"
+        android:text="@string/beschrijvingopendag"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="410dp"
@@ -24,11 +51,12 @@
         android:layout_height="89dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="274dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginTop="457dp"
+        android:layout_marginEnd="4dp"
         android:text="@string/beschrijvingopendag"
         android:textAlignment="center"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/opendag1"
@@ -37,6 +65,26 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="179dp"
         android:text="@string/opendag1"
+        android:textSize="17sp"
+        android:background="@color/buttonColor"/>
+    <Button
+        android:id="@+id/opendag2"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="549dp"
+        android:background="@color/buttonColor"
+        android:text="@string/opendag2"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/opendag3"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="363dp"
+        android:background="@color/buttonColor"
+        android:text="@string/opendag3"
         android:textSize="17sp" />
 
 

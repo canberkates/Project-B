@@ -9,6 +9,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
@@ -16,6 +20,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        LinearLayout banner = (LinearLayout) findViewById(R.id.banner);
+        banner.getBackground().setAlpha(128);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -34,6 +41,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     new HomeFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
+
+        ImageButton homeButton = (ImageButton) findViewById(R.id.homeButton);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new HomeFragment()).addToBackStack(null).commit();
+            }
+        });
+
     }
 
 
@@ -42,23 +59,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (menuItem.getItemId()){
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new HomeFragment()).commit();
+                        new HomeFragment()).addToBackStack(null).commit();
                 break;
             case R.id.nav_overzicht:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new OverzichtFragment()).commit();
+                        new OverzichtFragment()).addToBackStack(null).commit();
                 break;
             case R.id.nav_contact:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new ContactFragment()).commit();
+                        new ContactFragment()).addToBackStack(null).commit();
                 break;
             case R.id.nav_vraag:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new VraagFragment()).commit();
+                        new VraagFragment()).addToBackStack(null).commit();
                 break;
             case R.id.nav_opleidingen:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new OpleidingenFragment()).commit();
+                        new OpleidingenFragment()).addToBackStack(null).commit();
                 break;
 
         }

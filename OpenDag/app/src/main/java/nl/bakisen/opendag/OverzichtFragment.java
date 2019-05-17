@@ -24,7 +24,25 @@ public class OverzichtFragment extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction fropendag1 = getFragmentManager().beginTransaction();
                 fropendag1.replace(R.id.fragment_container, new OverzichtOpenDag1Fragment());
-                fropendag1.commit();
+                fropendag1.addToBackStack(null).commit();
+            }
+        });
+        Button opendag2 = (Button) view.findViewById(R.id.opendag2);
+        opendag2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fropendag2 = getFragmentManager().beginTransaction();
+                fropendag2.replace(R.id.fragment_container, new OverzichtOpenDag2Fragment());
+                fropendag2.addToBackStack(null).commit();
+            }
+        });
+        Button opendag3 = (Button) view.findViewById(R.id.opendag3);
+        opendag3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fropendag3 = getFragmentManager().beginTransaction();
+                fropendag3.replace(R.id.fragment_container, new OverzichtOpenDag3Fragment());
+                fropendag3.addToBackStack(null).commit();
             }
         });
 

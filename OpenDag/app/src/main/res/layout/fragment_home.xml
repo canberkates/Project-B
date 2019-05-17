@@ -5,8 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OverzichtFragment">
-
+    tools:context=".OverzichtFragment"
+    android:background="@color/white">
 
 
     <Button
@@ -14,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="96dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="175dp"
+        android:background="@color/buttonColor"
         android:text="@string/opendag1"
         android:textSize="17sp" />
 
@@ -23,7 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="96dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="430dp"
+        android:layout_marginTop="354dp"
+        android:background="@color/buttonColor"
         android:text="@string/opleidingen"
         android:textSize="17sp" />
 
@@ -34,11 +36,12 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="131dp"
         android:layout_marginEnd="0dp"
         android:text="Opkomende Opendag"
         android:textAlignment="center"
-        android:textSize="20dp"/>
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/berichtwelkom"
@@ -47,7 +50,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="0dp"
         android:text="@string/welkomstbericht"
         android:textAlignment="center"
@@ -60,11 +63,12 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="400dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginEnd="-4dp"
         android:text="Beschikbare Opleidingen"
         android:textAlignment="center"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 
 
