@@ -27,6 +27,7 @@ public class ContactFragment extends Fragment {
     Button btnbeganegrond, btnetage1, btnetage2, btnetage3, btnetage4, btnetage5;
     ImageView plattegrond;
     int [] images = new int [] {R.drawable.beganegrond, R.drawable.etage1, R.drawable.etage2, R.drawable.etage3, R.drawable.etage4, R.drawable.etage5};
+    int popwindow;
 
 
 
@@ -47,8 +48,9 @@ public class ContactFragment extends Fragment {
         btnbeganegrond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RelativeLayout popwindow = (RelativeLayout) view.findViewById(R.id.popwindow);
-                popwindow.setBackgroundResource(images[0]);
+//                popwindow = (RelativeLayout) view.findViewById(R.id.popwindow);
+//                popwindow.setBackgroundResource(images[0]);
+                popwindow = 1;
                 plattegrond.setImageResource(images[0]);
                 btnbeganegrond.setVisibility(View.VISIBLE);
 
@@ -58,8 +60,9 @@ public class ContactFragment extends Fragment {
         btnetage1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RelativeLayout popwindow = (RelativeLayout) view.findViewById(R.id.popwindow);
-                popwindow.setBackgroundResource(images[1]);
+//                popwindow = (RelativeLayout) view.findViewById(R.id.popwindow);
+//                popwindow.setBackgroundResource(images[1]);
+                popwindow = 2;
                 plattegrond.setImageResource(images[1]);
                 btnetage1.setVisibility(View.VISIBLE);
 
@@ -69,8 +72,9 @@ public class ContactFragment extends Fragment {
         btnetage2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RelativeLayout popwindow = (RelativeLayout) view.findViewById(R.id.popwindow);
-                popwindow.setBackgroundResource(images[2]);
+//                popwindow = (RelativeLayout) view.findViewById(R.id.popwindow);
+//                popwindow.setBackgroundResource(images[2]);
+                popwindow = 3;
                 plattegrond.setImageResource(images[2]);
                 btnetage2.setVisibility(View.VISIBLE);
 
@@ -80,8 +84,9 @@ public class ContactFragment extends Fragment {
         btnetage3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RelativeLayout popwindow = (RelativeLayout) view.findViewById(R.id.popwindow);
-                popwindow.setBackgroundResource(images[3]);
+//                popwindow = (RelativeLayout) view.findViewById(R.id.popwindow);
+//                popwindow.setBackgroundResource(images[3]);
+                popwindow = 4;
                 plattegrond.setImageResource(images[3]);
                 btnetage3.setVisibility(View.VISIBLE);
 
@@ -91,8 +96,9 @@ public class ContactFragment extends Fragment {
         btnetage4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RelativeLayout popwindow = (RelativeLayout) view.findViewById(R.id.popwindow);
-                popwindow.setBackgroundResource(images[4]);
+//                popwindow = (RelativeLayout) view.findViewById(R.id.popwindow);
+//                popwindow.setBackgroundResource(images[4]);
+                popwindow = 5;
                 plattegrond.setImageResource(images[4]);
                 btnetage4.setVisibility(View.VISIBLE);
 
@@ -102,8 +108,9 @@ public class ContactFragment extends Fragment {
         btnetage5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RelativeLayout popwindow = (RelativeLayout) view.findViewById(R.id.popwindow);
-                popwindow.setBackgroundResource(images[5]);
+//                popwindow = (RelativeLayout) view.findViewById(R.id.popwindow);
+//                popwindow.setBackgroundResource(images[5]);
+                popwindow = 6;
                 plattegrond.setImageResource(images[5]);
                 btnetage5.setVisibility(View.VISIBLE);
 
@@ -114,6 +121,7 @@ public class ContactFragment extends Fragment {
             @Override
             public void onClick(View v) {
                     Intent in = new Intent(getActivity(), Pop.class);
+                    in.putExtra("plattegrond", popwindow);
                     startActivity(in);
             }
         });
