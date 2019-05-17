@@ -100,8 +100,8 @@ public class ContactFragment extends Fragment {
         plattegrond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(getActivity(), Pop.class);
-                startActivity(in);
+                    Intent in = new Intent(getActivity(), Pop.class);
+                    startActivity(in);
             }
         });
 
