@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VraagFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/vraag_titel"
+            android:textColor="@color/white"
+            android:background="@color/hrrood"
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/naam"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/naam"
+            android:inputType="textPersonName"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"/>
+
+        <TextView
+            android:id="@+id/textLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/achternaam"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
+
+        <EditText
+            android:id="@+id/inputLastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/achternaam"
+            android:inputType="textPersonName"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"/>
+
+        <TextView
+            android:id="@+id/textMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
+
+        <EditText
+            android:id="@+id/inputMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"/>
+
+        <TextView
+            android:id="@+id/text_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vraag"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
+
+        <EditText
+            android:id="@+id/inputQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="5dp"
+            android:autofillHints=""
+            android:hint="Stel je vraag."
+            android:ems="10"
+            android:inputType="text"
+            />
+
+        <Button
+            android:id="@+id/questionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:width="200dp"
+            android:text="@string/verstuur"
+            android:textColor="@color/white"
+            android:background="@color/buttonColor"
+            android:layout_marginVertical="30dp"/>
+
+    </LinearLayout>
+</ScrollView>
