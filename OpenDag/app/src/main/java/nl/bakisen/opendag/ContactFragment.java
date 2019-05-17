@@ -42,6 +42,7 @@ public class ContactFragment extends Fragment {
         btnetage4 = (Button) view.findViewById(R.id.btnetage4);
         btnetage5 = (Button) view.findViewById(R.id.btnetage5);
 
+
         btnbeganegrond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,6 +94,14 @@ public class ContactFragment extends Fragment {
                 plattegrond.setImageResource(images[5]);
                 btnetage5.setVisibility(View.VISIBLE);
 
+            }
+        });
+
+        plattegrond.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), Pop.class);
+                startActivity(in);
             }
         });
 
