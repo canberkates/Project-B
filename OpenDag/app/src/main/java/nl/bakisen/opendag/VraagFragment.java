@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import nl.bakisen.opendag.Domain.GMailSender;
 import nl.bakisen.opendag.Domain.Vraag;
@@ -63,6 +64,9 @@ public class VraagFragment extends Fragment {
                         return null;
                     }
                 }.execute();
+
+                Toast.makeText(getContext(),"Je vraag is ontvangen bij ons. Je krijgt zo spoedig mogelijk een antwoord.",Toast.LENGTH_SHORT).show();
+
                 FragmentTransaction home = getFragmentManager().beginTransaction();
                 home.replace(R.id.fragment_container, new HomeFragment());
                 home.commit();
