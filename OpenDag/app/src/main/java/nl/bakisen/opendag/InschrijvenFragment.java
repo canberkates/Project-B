@@ -58,8 +58,8 @@ public class InschrijvenFragment extends Fragment {
 
                 final GMailSender sender = new GMailSender("inschrijvenopendag@gmail.com", "Inschrijvenopendag123");
                 newAanmelding = new Aanmelding(gender, name, lastName, date, email, phone, education);
-                final String subject = "Inschrijving Open Dag 4 april";
-                final String body = "Beste " + newAanmelding.getFirstName() + " " + newAanmelding.getLastName() + ",\n\nBedankt voor je inschrijving voor de open dag van 4 april 2018.\nWij zien je graag op deze dag!!\n\nHogeschool Rotterdam";
+                final String subject = "Inschrijving Open Dag 2 november";
+                final String body = "Beste " + newAanmelding.getFirstName() + " " + newAanmelding.getLastName() + ",\n\nBedankt voor je inschrijving voor de open dag van 2 november 2018.\nWij zien je graag op deze dag!!\n\nHogeschool Rotterdam";
                 final String recipient = newAanmelding.getMail();
                 final String senderMail = sender.getUser();
 
@@ -78,7 +78,7 @@ public class InschrijvenFragment extends Fragment {
 
 
                 FragmentTransaction home = getFragmentManager().beginTransaction();
-                home.replace(R.id.fragment_container, new HomeFragment());
+                home.replace(R.id.fragment_container, new MailOntvangenFragment());
                 home.commit();
             }
         });

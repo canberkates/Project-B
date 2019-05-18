@@ -8,10 +8,21 @@
     tools:context=".OverzichtOpenDag1Fragment"
     android:background="@color/white">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/detail_titel"
+            android:textColor="@color/white"
+            android:background="@color/hrrood"
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="350dp"
@@ -20,13 +31,14 @@
             android:layout_marginTop="20dp"
             android:text="@string/detail_title"
             android:textStyle="bold"
-            android:textSize="20sp"/>
+            android:textSize="23sp"/>
 
         <TextView
             android:layout_width="250dp"
             android:layout_height="100dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="5dp"
+            android:textSize="17sp"
             android:text="@string/detail_intro"/>
 
         <LinearLayout
@@ -37,30 +49,34 @@
 
             <Button
                 android:id="@+id/calender_button"
-                android:layout_width="fill_parent"
+                android:layout_gravity="center"
+
+                android:layout_width="330dp"
                 android:layout_height="70dp"
                 android:text="Zet het nu op je agenda"
-                android:textAlignment="textStart"
-                android:background="@color/buttonColor"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_rounded"/>
 
             <Button
                 android:id="@+id/aanmeldknop_opendag"
-                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_width="330dp"
                 android:layout_height="70dp"
                 android:text="@string/detail_aanmelden"
-                android:textAlignment="textStart"
-                android:background="@color/buttonColor"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_rounded"/>
 
             <Button
                 android:id="@+id/informatie_toggle"
-                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_width="330dp"
                 android:layout_height="70dp"
                 android:text="@string/detail_informatie"
-                android:textAlignment="textStart"
-                android:background="@color/buttonColor"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_rounded"/>
 
         </LinearLayout>
 
@@ -202,7 +218,7 @@
                 android:paddingEnd="10dp"
                 android:text="@string/detail_overige_title"
                 android:textStyle="bold"
-                android:textSize="17sp"/>
+                android:textSize="23sp"/>
 
 
             <LinearLayout
@@ -218,45 +234,45 @@
 
                     <Button
                         android:id="@+id/buttonstudievoorlichting"
-                        android:layout_width="100dp"
+                        android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="10dp"
                         android:background="?android:attr/selectableItemBackgroundBorderless"
-                        android:textSize="9sp"
+                        android:textSize="14sp"
                         android:text="Studievoorlichting"/>
 
                     <Button
                         android:id="@+id/buttonstudentaanzet"
-                        android:layout_width="100dp"
+                        android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="10dp"
                         android:background="?android:attr/selectableItemBackgroundBorderless"
-                        android:textSize="9sp"
+                        android:textSize="14sp"
                         android:text="Student aan Zet"/>
 
                     <Button
                         android:id="@+id/buttontoelatingsexamen"
-                        android:layout_width="100dp"
+                        android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="10dp"
                         android:background="?android:attr/selectableItemBackgroundBorderless"
-                        android:textSize="9sp"
+                        android:textSize="14sp"
                         android:text="Toelatingsexamen"/>
 
                     <Button
                         android:id="@+id/buttoninschrijving"
-                        android:layout_width="100dp"
+                        android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="10dp"
                         android:background="?android:attr/selectableItemBackgroundBorderless"
-                        android:textSize="9sp"
+                        android:textSize="14sp"
                         android:text="Inschrijven"/>
 
                 </LinearLayout>
 
                 <TextView
                     android:id="@+id/textoverigeinfo"
-                    android:layout_width="250dp"
+                    android:layout_width="225dp"
                     android:layout_height="wrap_content"
 
                     android:layout_marginStart="10dp"
@@ -265,12 +281,6 @@
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
                     android:text="@string/detail_workshop_data" />
-
-
-
-
-
-
 
             </LinearLayout>
 

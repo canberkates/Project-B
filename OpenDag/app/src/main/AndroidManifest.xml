@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="nl.bakisen.opendag">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InschrijvenFragment"></activity>
+        <activity android:name=".MailOntvangenFragment"></activity>
+        <activity android:name=".InschrijvenFragment" />
         <activity android:name=".opendagenlijstFragment" />
         <activity android:name=".OverzichtOpenDag1Fragment" />
         <activity android:name=".OverzichtFragment" />
@@ -24,9 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Pop"
-            android:theme="@style/AppTheme.CustomTheme"
-            ></activity>
+        <activity
+            android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme" />
     </application>
 
 </manifest>

@@ -24,10 +24,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class ContactFragment extends Fragment {
-    Button btnbeganegrond, btnetage1, btnetage2, btnetage3, btnetage4, btnetage5;
-    ImageView plattegrond;
+    Button btnbeganegrond, btnetage1, btnetage2, btnetage3, btnetage4, btnetage5, routeBeschrijving;
+    ImageView plattegrond, googlemaps;
     int [] images = new int [] {R.drawable.beganegrond, R.drawable.etage1, R.drawable.etage2, R.drawable.etage3, R.drawable.etage4, R.drawable.etage5};
     int popwindow;
+
 
 
 
@@ -36,6 +37,9 @@ public class ContactFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_contact, container, false);
 
+        googlemaps = (ImageView) view.findViewById(R.id.location);
+        routeBeschrijving = (Button) view.findViewById(R.id.routeBeschrijving);
+
         plattegrond = (ImageView) view.findViewById(R.id.plattegrond);
         btnbeganegrond = (Button) view.findViewById(R.id.btnbeganegrond);
         btnetage1 = (Button) view.findViewById(R.id.btnetage1);
@@ -43,6 +47,26 @@ public class ContactFragment extends Fragment {
         btnetage3 = (Button) view.findViewById(R.id.btnetage3);
         btnetage4 = (Button) view.findViewById(R.id.btnetage4);
         btnetage5 = (Button) view.findViewById(R.id.btnetage5);
+
+        googlemaps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri mapsIntentUri = Uri.parse("https://www.google.com/maps/search/?api=1&query=wijnhaven+107+3011+WN+Rotterdam+");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, mapsIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+        });
+
+        routeBeschrijving.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri mapsIntentUri = Uri.parse("https://www.google.com/maps/dir/?api=1&destination=wijnhaven+107+3011+WN+Rotterdam+");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, mapsIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+        });
 
 
         btnbeganegrond.setOnClickListener(new View.OnClickListener() {

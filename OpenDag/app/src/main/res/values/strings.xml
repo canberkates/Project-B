@@ -1,17 +1,25 @@
 <resources>
-    <string name="app_name">Opendagen</string>
+    <string name="app_name"></string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="beschrijvingopendag">Klassikale overzicht, voorbeelden van projecten,, workshops, overige activiteiten</string>
-    <string name="opendag1">4 april 2019 | 16.00 - 20.00 uur </string>
+    <string name="opendag1">2 november 2019 | 16.00 - 20.00 uur </string>
+    <string name="Overzicht_titel">Overzicht</string>
     <string name="Overzicht">Overzicht Open Dagen</string>
     <string name="opleidingen">Overzicht Opleidingen</string>
-    <string name="welkomstbericht">Welkom bij de open dagen app, medemogelijk gemaakt door de studenten van de opleiding Informatica</string>
+    <string name="welkomstbericht">Welkom bij de Open Dagen app!</string>
+    <string name="home">Hoofdpagina</string>
 
+    <string name="mail_verzonden">Mail is verzonden</string>
+    <string name="inschrijftitel">U heeft zich succesvol ingeschreven. \nWilt u de open dag delen ? \nU kunt gebruik maken van de knoppen hieronden. \nDe terug knop brengt u terug naar de homepagina</string>
+
+
+
+    <string name="detail_titel">Details open dag</string>
     <string name="detail_aanmelden">Meld je nu aan voor deze open dag  </string>
     <string name="detail_informatie">Zie meer informatie over deze open dag</string>
     <string name="detail_intro">Een bacheloropleiding is een vierjarige opleiding op hbo-niveau. Na het behalen van je diploma ga je werken of studeer je verder aan een masteropleiding.</string>
-    <string name="detail_title">CMI | 11 april 2019 | 16:00 ~ 20:00</string>
+    <string name="detail_title">CMI | 2 november 2019 | 16:00 ~ 20:00</string>
     <string name="detail_infotitle">Programma open dag</string>
     <string name="detail_klassikale_voorlichting">Klassikale voorlichting</string>
 
@@ -48,7 +56,7 @@
     <string name="vraag_titel">Stel hier je vraag</string>
     <string name="volledige_naam">Naam</string>
     <string name="vraag">Vraag</string>
-    
+
     <string name="informatie_titel">Contact</string>
     <string name="informatie_adres">Adres:</string>
     <string name="informatie_adres_gegevens">Wijnhaven 107,\n3011 WN Rotterdam</string>

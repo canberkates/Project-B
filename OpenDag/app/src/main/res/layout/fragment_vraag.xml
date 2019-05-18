@@ -107,7 +107,7 @@
             android:width="200dp"
             android:text="@string/verstuur"
             android:textColor="@color/white"
-            android:background="@color/buttonColor"
+            android:background="@drawable/btn_rounded"
             android:layout_marginVertical="30dp"/>
 
     </LinearLayout>
