@@ -48,9 +48,14 @@ public class VraagFragment extends Fragment {
                 newVraag = new Vraag(firstName, lastName, email, question);
 
                 final String subject = "Vraag over een open dag";
-                final String body = "Er is een nieuwe vraag ingezonden.\n\n " + newVraag.getFirstName() + " " + newVraag.getLastName() + " stelde de vraag: \n\n" + newVraag.getQuestion() + "\n\nVraag beantwoorden kan via het volgende e-mailadres: " + newVraag.getMail();
+                final String body = "Hallo " + newVraag.getFirstName() + " " + newVraag.getLastName() + ",\n\nBedankt voor jouw vraag. Wij zullen zo spoedig mogelijk met een antwoord komen.\n" +
+                        "heb je nog een andere vraag, stuur dat dan door via de applicatie.\n\nMet vriendelijke groet,\nHR Opendagen";
                 final String recipient = newVraag.getMail();
                 final String senderMail = sender.getUser();
+                final String bodySender = "Er is een nieuwe vraag ingezonden.\n\n " + newVraag.getFirstName() + " " + newVraag.getLastName() + " stelde de vraag: \n\n" + newVraag.getQuestion() + "\n\nVraag beantwoorden kan via het volgende e-mailadres: " + newVraag.getMail();
+
+
+
 
                 new AsyncTask<Void, Void, Void>() {
                     @Override
@@ -61,6 +66,10 @@ public class VraagFragment extends Fragment {
                         } catch (Exception e) {
                             Log.e("SendMail", e.getMessage(), e);
                         }
+
+
+
+
                         return null;
                     }
                 }.execute();
