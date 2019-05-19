@@ -41,24 +41,13 @@
             android:layout_height="10dp"
             app:srcCompat="@drawable/boxtransparent" />
 
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/communicatiedeel"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/hrokleur"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
             android:text="Communicatie deeltijd" />
-
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/hrokleur"
-            android:text="Je wilt vanuit je huidige functie als marketingmedewerker of communicatieadviseur graag doorgroeien naar een managementfunctie, maar daarvoor wordt wel een bachelordiploma gevraagd. " />
 
         <ImageView
             android:id="@+id/imageView20"
@@ -66,24 +55,13 @@
             android:layout_height="10dp"
             app:srcCompat="@drawable/boxtransparent" />
 
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/Informaticadeel"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
+            android:background="@color/hrokleur"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
             android:text="Informatica deeltijd" />
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/hrokleur"
-            android:text="Ben jij toe aan de volgende stap in je loopbaan waarbij je je onder andere bezig houdt met softwaresystemen, informatiesystemen of telematicatoepassingen? " />
 
         <ImageView
             android:id="@+id/imageView15"
@@ -106,24 +84,13 @@
             android:layout_height="10dp"
             app:srcCompat="@drawable/boxtransparent" />
 
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/communicatievol"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
+            android:background="@color/hrokleur"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
             android:text="Communicatie voltijd" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/hrokleur"
-            android:text="Heb je een scherp oog en oor voor de verhalen van mensen en merken? Ben je creatief met tekst en beeld en gefascineerd door de wereld van media? Dan is de opleiding Communicatie iets voor jou! " />
 
         <ImageView
             android:id="@+id/imageView9"
@@ -131,24 +98,13 @@
             android:layout_height="10dp"
             app:srcCompat="@drawable/boxtransparent" />
 
-        <TextView
-            android:id="@+id/textView25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/CMDvol"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
+            android:background="@color/hrokleur"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
             android:text="Communication and Multimedia Design voltijd" />
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/hrokleur"
-            android:text="Als CMD’er ontwerp je interactieve producten en diensten. Dat doe je met een creatief team voor échte opdrachtgevers in Studio’s en Labs. " />
 
         <ImageView
             android:id="@+id/imageView11"
@@ -156,24 +112,13 @@
             android:layout_height="10dp"
             app:srcCompat="@drawable/boxtransparent" />
 
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/informaticavol"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
+            android:background="@color/hrokleur"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
             android:text="Informatica voltijd" />
-
-        <TextView
-            android:id="@+id/textView99"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/hrokleur"
-            android:text="We leiden je op tot software engineer. Je gaat aan de slag met het ontwikkelen van software voor diverse toepassingen. Je bent in staat complexe ICT-systemen te analyseren, ontwerpen en implementeren. " />
 
         <ImageView
             android:id="@+id/imageView13"
@@ -181,24 +126,13 @@
             android:layout_height="10dp"
             app:srcCompat="@drawable/boxtransparent" />
 
-        <TextView
-            android:id="@+id/textView31"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/techinformaticavol"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/hrokleur"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
             android:text="Technische Informatica voltijd" />
-
-        <TextView
-            android:id="@+id/textView32"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/hrokleur"
-            android:text="Als technisch informaticus werk je aan moderne ICT-systemen waarbij hard- en software geïntegreerd zijn. Dankzij je kennis van programmeren en hardware kun je juist op het snijpunt daarvan opereren. " />
 
         <ImageView
             android:id="@+id/imageView18"
@@ -213,7 +147,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/hogeschool/locaties/wijnhaven-107/" />
-
 
     </LinearLayout>
 </ScrollView>

@@ -48,7 +48,7 @@
     <string name="vraag_titel">Stel hier je vraag</string>
     <string name="volledige_naam">Naam</string>
     <string name="vraag">Vraag</string>
-    
+
     <string name="informatie_titel">Contact</string>
     <string name="informatie_adres">Adres:</string>
     <string name="informatie_adres_gegevens">Wijnhaven 107,\n3011 WN Rotterdam</string>
@@ -63,6 +63,9 @@
     <string name="btnetage3">Derde etage</string>
     <string name="btnetage4">Vierde etage</string>
     <string name="btnetage5">Vijfde etage</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
