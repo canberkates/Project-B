@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name"></string>
+    <string name="app_name">HR Opendagen</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="beschrijvingopendag">Klassikale overzicht, voorbeelden van projecten, workshops, overige activiteiten</string>
-    <string name="opendag1">2 november 2019 | 16.00 - 20.00 uur </string>
+    <string name="opendag1">2 november 2019 | 17:00 - 20:00 uur </string>
+    <string name="opendag2">2 februari 2020 | 17:00 - 20:00 uur </string>
+    <string name="opendag3">11 april 2020 | 17:00 - 20:00 uur </string>
     <string name="Overzicht_titel">Overzicht</string>
     <string name="Overzicht">Overzicht Open Dagen</string>
     <string name="opleidingen">Overzicht Opleidingen</string>
@@ -14,12 +16,13 @@
     <string name="inschrijftitel">U heeft zich succesvol ingeschreven. \nWilt u de open dag delen ? \nU kunt gebruik maken van de knoppen hieronden. \nDe terug knop brengt u terug naar de homepagina</string>
 
 
-
     <string name="detail_titel">Details open dag</string>
     <string name="detail_aanmelden">Meld je nu aan voor deze open dag  </string>
     <string name="detail_informatie">Zie meer informatie over deze open dag</string>
     <string name="detail_intro">Een bacheloropleiding is een vierjarige opleiding op hbo-niveau. Na het behalen van je diploma ga je werken of studeer je verder aan een masteropleiding.</string>
     <string name="detail_title">CMI | 2 november 2019 | 16:00 ~ 20:00</string>
+    <string name="detail_title2">CMI | 2 februari 2020 | 17:00 ~ 20:00</string>
+    <string name="detail_title3">CMI | 11 april 2020 | 17:00 ~ 20:00</string>
     <string name="detail_infotitle">Programma open dag</string>
     <string name="detail_klassikale_voorlichting">Klassikale voorlichting</string>
 

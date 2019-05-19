@@ -21,7 +21,7 @@
     <TextView
         android:id="@+id/berichtwelkom"
         android:layout_width="match_parent"
-        android:layout_height="96dp"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:text="@string/welkomstbericht"
         android:textAlignment="center"
