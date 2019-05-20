@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Inschrijven3Fragment"></activity>
+        <activity android:name=".TechnischeInformaticaVTFragment"></activity>
+        <activity android:name=".InformaticaVTFragment" />
+        <activity android:name=".CMDVTFragment" />
+        <activity android:name=".CommunicatieVTFragment" />
+        <activity android:name=".InformaticaDTFragment" />
+        <activity android:name=".CommunicatieDTFragment" />
+        <activity android:name=".Inschrijven3Fragment" />
         <activity android:name=".Inschrijven2Fragment" />
         <activity android:name=".OverzichtOpenDag3Fragment" />
         <activity android:name=".OverzichtOpenDag2Fragment" />

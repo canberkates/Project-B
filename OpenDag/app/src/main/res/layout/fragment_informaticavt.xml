@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/opleidingen"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            app:srcCompat="@drawable/boxtransparent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"
+            android:text="Informatica voltijd" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="300dp"
+            android:layout_height="10dp"
+            app:srcCompat="@drawable/boxtransparent" />
+
+
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="We leiden je op tot software engineer. Je gaat aan de slag met het ontwikkelen van software voor diverse toepassingen. Je bent in staat complexe ICT-systemen te analyseren, ontwerpen en implementeren." />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:autoLink="all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/opleidingen/bachelor/informatica/voltijd/" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -41,6 +41,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/opendag1"
             android:textSize="17sp"
+            android:textColor="@color/white"
             android:background="@drawable/btn_rounded"/>
 
         <TextView
@@ -61,6 +62,7 @@
             android:layout_marginTop="10dp"
             android:text="@string/opendag2"
             android:textSize="17sp"
+            android:textColor="@color/white"
             android:background="@drawable/btn_rounded"/>
 
         <TextView
@@ -81,6 +83,7 @@
             android:layout_marginTop="10dp"
             android:text="@string/opendag3"
             android:textSize="17sp"
+            android:textColor="@color/white"
             android:background="@drawable/btn_rounded"/>
 
         <TextView

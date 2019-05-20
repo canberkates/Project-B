@@ -52,7 +52,7 @@ public class VraagFragment extends Fragment {
                         "heb je nog een andere vraag, stuur dat dan door via de applicatie.\n\nMet vriendelijke groet,\nHR Opendagen";
                 final String recipient = newVraag.getMail();
                 final String senderMail = sender.getUser();
-                final String bodySender = "Er is een nieuwe vraag ingezonden.\n\n " + newVraag.getFirstName() + " " + newVraag.getLastName() + " stelde de vraag: \n\n" + newVraag.getQuestion() + "\n\nVraag beantwoorden kan via het volgende e-mailadres: " + newVraag.getMail();
+                final String bodySender = "Er is een nieuwe vraag ingezonden.\n" + newVraag.getFirstName() + " " + newVraag.getLastName() + " stelde de vraag: \n\n" + newVraag.getQuestion() + "\n\nVraag beantwoorden kan via het volgende e-mailadres: " + newVraag.getMail();
 
 
 
@@ -67,9 +67,12 @@ public class VraagFragment extends Fragment {
                             Log.e("SendMail", e.getMessage(), e);
                         }
 
-
-
-
+                        try {
+                            sender.sendMail(subject,bodySender, senderMail, senderMail);
+                            System.out.println("sending to: " + senderMail);
+                        } catch (Exception e) {
+                            Log.e("SendMail",e.getMessage(), e);
+                        }
                         return null;
                     }
                 }.execute();
