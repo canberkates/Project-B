@@ -6,6 +6,7 @@ import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
+import android.view.View;
 
 public class Pop extends Activity {
 
@@ -18,6 +19,26 @@ public class Pop extends Activity {
         setContentView(R.layout.popwindow);
         Bundle extras = getIntent().getExtras();
         RelativeLayout layout = findViewById(R.id.popwindow);
+        View view = getLayoutInflater().inflate(R.layout.popwindow, null);
+        setContentView(view);
+        view.setOnClickListener(new View.OnClickListener() {
+            float zoomFactor = 1.3f;
+            boolean zoomedOut = false;
+
+            @Override
+            public void onClick(View v) {
+                if(zoomedOut) {
+                    v.setScaleX(1);
+                    v.setScaleY(1);
+                    zoomedOut = false;
+                }
+                else {
+                    v.setScaleX(zoomFactor);
+                    v.setScaleY(zoomFactor);
+                    zoomedOut = true;
+                }
+            }
+        });
         if (extras != null) {
             background = extras.getInt("plattegrond");
         }
