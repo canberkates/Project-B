@@ -116,10 +116,8 @@
             <TextView
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="5dp"
-                android:paddingTop="10dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/detail_voorlichting_data"
@@ -144,32 +142,6 @@
 
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
-                android:paddingTop="10dp"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
-                android:text="@string/detail_project_data"
-                android:textSize="12sp"/>
-
-            <TextView
-                android:layout_width="360dp"
-                android:layout_height="40dp"
-
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="10dp"
-                android:paddingTop="10dp"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
-                android:text="@string/detail_project_title"
-                android:textStyle="bold"
-                android:textSize="17sp"/>
-
-            <TextView
-                android:layout_width="360dp"
-                android:layout_height="wrap_content"
-
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="10dp"
-                android:paddingTop="10dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/detail_project_data"
@@ -194,7 +166,6 @@
 
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
-                android:paddingTop="10dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/detail_workshop_data"
@@ -235,8 +206,9 @@
                         android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="10dp"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
-                        android:textSize="14sp"
+                        android:background="@drawable/btn_rounded"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
                         android:text="Studievoorlichting"/>
 
                     <Button
@@ -244,8 +216,9 @@
                         android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="10dp"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
-                        android:textSize="14sp"
+                        android:background="@drawable/btn_rounded"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
                         android:text="Student aan Zet"/>
 
                     <Button
@@ -253,8 +226,9 @@
                         android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="10dp"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
-                        android:textSize="14sp"
+                        android:background="@drawable/btn_rounded"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
                         android:text="Toelatingsexamen"/>
 
                     <Button
@@ -262,8 +236,9 @@
                         android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="10dp"
-                        android:background="?android:attr/selectableItemBackgroundBorderless"
-                        android:textSize="14sp"
+                        android:background="@drawable/btn_rounded"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
                         android:text="Inschrijven"/>
 
                 </LinearLayout>
@@ -275,10 +250,9 @@
 
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
-                    android:paddingTop="10dp"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
-                    android:text="@string/detail_workshop_data" />
+                    android:text="@string/detail_studievoorlichting" />
 
             </LinearLayout>
 
