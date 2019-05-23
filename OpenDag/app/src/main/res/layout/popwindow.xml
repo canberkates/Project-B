@@ -12,6 +12,6 @@
         android:id="@+id/zoombackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/beganegrond"
-        android:scaleType="matrix"/>
+        android:scaleType="matrix"
+        app:srcCompat="@drawable/beganegrond" />
 </RelativeLayout>
