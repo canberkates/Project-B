@@ -19,7 +19,6 @@ public class Pop extends Activity {
     private ImageView zoombackground;
     private Float scale = 1f;
     private ScaleGestureDetector SGD;
-    private ScrollView horizontalScroll;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -27,8 +26,6 @@ public class Pop extends Activity {
         Bundle extras = getIntent().getExtras();
         RelativeLayout layout = findViewById(R.id.popwindow);
         zoombackground = (ImageView) findViewById(R.id.zoombackground);
-        horizontalScroll = (ScrollView) findViewById(R.id.horizontalScrollView);
-
         
 
         SGD = new ScaleGestureDetector(this, new ScaleListener());
@@ -94,7 +91,6 @@ public class Pop extends Activity {
             zoombackground.setScaleX(scale);
             zoombackground.setScaleY(scale);
             return true;
-
         }
     }
 }
