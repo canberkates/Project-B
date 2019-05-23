@@ -5,48 +5,28 @@ import android.graphics.Matrix;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.view.View;
 
 public class Pop extends Activity {
 
     int background;
-    Matrix matrix = new Matrix();
-    Float scale = 1f;
-    ScaleGestureDetector SGD;
+    private ImageView zoombackground;
+    private Float scale = 1f;
+    private ScaleGestureDetector SGD;
 
     protected void onCreate(Bundle savedInstanceState){
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.popwindow);
         Bundle extras = getIntent().getExtras();
         RelativeLayout layout = findViewById(R.id.popwindow);
-        final ImageView zoombackground = (ImageView) findViewById(R.id.zoombackground);
-        /*View view = getLayoutInflater().inflate(R.layout.popwindow, null);*/
-        /*view.setOnClickListener(new View.OnClickListener() {*/
-        /*    float zoomFactor = 1.3f;*/
-        /*    boolean zoomedOut = false;*/
-/*
-*/
+        zoombackground = (ImageView) findViewById(R.id.zoombackground);
 
-        /*    @Override*/
-        /*    public void onClick(View v) {*/
-        /*        if(zoomedOut) {*/
-        /*            v.setScaleX(1);*/
-        /*            v.setScaleY(1);*/
-        /*            zoomedOut = false;*/
-        /*        }*/
-        /*        else {*/
-        /*            v.setScaleX(zoomFactor);*/
-        /*            v.setScaleY(zoomFactor);*/
-        /*            zoomedOut = true;*/
-        /*        }*/
-        /*    }*/
-        /*});*/
+        SGD = new ScaleGestureDetector(this, new ScaleListener());
+
         if (extras != null) {
             background = extras.getInt("plattegrond");
         }
@@ -76,17 +56,6 @@ public class Pop extends Activity {
             /*layout.setBackgroundResource(R.drawable.etage5);*/
         }
 
-        private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener{
-            @Override
-            public boolean onScale(ScaleGestureDetector detector){
-                scale = scale * detector.getScaleFactor();
-                scale = Math.max(0.1f, Math.min(scale, 5f));
-                matrix.setScale(scale, scale);
-                zoombackground.setImageMatrix(matrix);
-                return true;
-                
-            }
-        }
         
 
         DisplayMetrics dm = new DisplayMetrics();
@@ -103,5 +72,25 @@ public class Pop extends Activity {
         params.y = -20;
 
         getWindow().setAttributes(params);
+
+
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent ev){
+        SGD.onTouchEvent(ev);
+        return true;
+    }
+
+    private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener{
+        @Override
+        public boolean onScale(ScaleGestureDetector detector){
+            scale = scale * detector.getScaleFactor();
+            scale = Math.max(0.1f, Math.min(scale, 5.0f));
+            zoombackground.setScaleX(scale);
+            zoombackground.setScaleY(scale);
+            return true;
+
+        }
     }
 }
