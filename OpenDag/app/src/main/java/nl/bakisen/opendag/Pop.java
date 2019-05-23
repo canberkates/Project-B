@@ -10,6 +10,10 @@ import android.view.ScaleGestureDetector;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
+
 
 public class Pop extends Activity {
 
