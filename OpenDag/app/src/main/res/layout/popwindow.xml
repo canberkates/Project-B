@@ -8,10 +8,20 @@
     android:background="@color/white"
     android:id="@+id/popwindow">
 
-    <ImageView
-        android:id="@+id/zoombackground"
+    <ScrollView
+        android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="matrix"
-        app:srcCompat="@drawable/beganegrond" />
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/zoombackground"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:srcCompat="@drawable/beganegrond" />
+
+
+
+    </ScrollView>
+
+
 </RelativeLayout>

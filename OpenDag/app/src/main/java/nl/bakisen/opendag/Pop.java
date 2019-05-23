@@ -8,8 +8,10 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.WindowManager;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 public class Pop extends Activity {
 
@@ -17,6 +19,7 @@ public class Pop extends Activity {
     private ImageView zoombackground;
     private Float scale = 1f;
     private ScaleGestureDetector SGD;
+    private ScrollView horizontalScroll;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -24,6 +27,9 @@ public class Pop extends Activity {
         Bundle extras = getIntent().getExtras();
         RelativeLayout layout = findViewById(R.id.popwindow);
         zoombackground = (ImageView) findViewById(R.id.zoombackground);
+        horizontalScroll = (ScrollView) findViewById(R.id.horizontalScrollView);
+
+        
 
         SGD = new ScaleGestureDetector(this, new ScaleListener());
 
@@ -56,15 +62,13 @@ public class Pop extends Activity {
             /*layout.setBackgroundResource(R.drawable.etage5);*/
         }
 
-        
-
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
 
         int width = dm.widthPixels;
         int height = dm.heightPixels;
 
-        getWindow().setLayout((int)(width),(int)(height*.2));
+        getWindow().setLayout((int)(width),(int)(height*.8));
 
         WindowManager.LayoutParams params = getWindow().getAttributes();
         params.gravity = Gravity.CENTER;
