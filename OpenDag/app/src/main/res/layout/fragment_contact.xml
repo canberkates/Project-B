@@ -15,12 +15,12 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
+            android:padding="10dp"
             android:text="@string/informatie_titel"
-            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/hrrood"
             android:textSize="20sp" />
 
         <TextView
@@ -29,15 +29,45 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             android:textColor="@color/black"
+            android:textSize="20sp"
             android:text="@string/informatie_adres"/>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/map"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="5dp"
-            android:text="@string/informatie_adres_gegevens"
-            android:textColor="@color/hrrood"/>
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/informatie_adres_gegevens"
+                android:textColor="@color/hrrood"/>
+
+            <Button
+                android:id="@+id/routeBeschrijving"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:background="@color/buttonColor"
+                android:layout_marginEnd="55dp"
+                android:text="route beschrijving"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -45,6 +75,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="15dp"
             android:textColor="@color/black"
+            android:textSize="20sp"
             android:text="@string/informatie_contact"/>
 
         <TextView
@@ -61,6 +92,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="15dp"
             android:textColor="@color/black"
+            android:textSize="20sp"
             android:text="@string/informatie_openingstijden"/>
 
         <LinearLayout
@@ -116,7 +148,8 @@
                     android:layout_marginHorizontal="5dp"
                     android:textSize="12sp"
                     android:text="@string/btnbeganegrond"
-                    android:background="@color/buttonColor"/>
+                    android:background="@color/buttonColor"
+                    android:textColor="@color/white"/>
 
                 <Button
                     android:id="@+id/btnetage1"
@@ -125,7 +158,8 @@
                     android:layout_marginHorizontal="5dp"
                     android:textSize="12sp"
                     android:text="@string/btnetage1"
-                    android:background="@color/buttonColor"/>
+                    android:background="@color/buttonColor"
+                    android:textColor="@color/white"/>
 
                 <Button
                     android:id="@+id/btnetage2"
@@ -134,7 +168,8 @@
                     android:layout_marginHorizontal="5dp"
                     android:textSize="12sp"
                     android:text="@string/btnetage2"
-                    android:background="@color/buttonColor"/>
+                    android:background="@color/buttonColor"
+                    android:textColor="@color/white"/>
 
                 <Button
                     android:id="@+id/btnetage3"
@@ -143,7 +178,8 @@
                     android:layout_marginHorizontal="5dp"
                     android:textSize="12sp"
                     android:text="@string/btnetage3"
-                    android:background="@color/buttonColor"/>
+                    android:background="@color/buttonColor"
+                    android:textColor="@color/white"/>
 
                 <Button
                     android:id="@+id/btnetage4"
@@ -152,7 +188,8 @@
                     android:layout_marginHorizontal="5dp"
                     android:textSize="12sp"
                     android:text="@string/btnetage4"
-                    android:background="@color/buttonColor"/>
+                    android:background="@color/buttonColor"
+                    android:textColor="@color/white"/>
 
                 <Button
                     android:id="@+id/btnetage5"
@@ -161,7 +198,8 @@
                     android:layout_marginHorizontal="5dp"
                     android:textSize="12sp"
                     android:text="@string/btnetage5"
-                    android:background="@color/buttonColor"/>
+                    android:background="@color/buttonColor"
+                    android:textColor="@color/white"/>
             </LinearLayout>
         </HorizontalScrollView>
 

@@ -19,7 +19,7 @@ import android.widget.Toast;
 import nl.bakisen.opendag.Domain.Aanmelding;
 import nl.bakisen.opendag.Domain.GMailSender;
 
-public class InschrijvenFragment extends Fragment {
+public class Inschrijven3Fragment extends Fragment {
 
     String gender, name, lastName, phone, email, education, date;
     Aanmelding newAanmelding;
@@ -58,15 +58,15 @@ public class InschrijvenFragment extends Fragment {
 
                 final GMailSender sender = new GMailSender("inschrijvenopendag@gmail.com", "Inschrijvenopendag123");
                 newAanmelding = new Aanmelding(gender, name, lastName, date, email, phone, education);
-                final String subject = "Inschrijving Open Dag 2 november";
-                final String bodystudent = "Beste " + newAanmelding.getFirstName() + " " + newAanmelding.getLastName() + ",\n\nBedankt voor je inschrijving voor de open dag van 2 november 2018.\nWij zien je graag op deze dag!!\n\nHogeschool Rotterdam";
+                final String subject = "Inschrijving Open Dag 11 april";
+                final String bodystudent = "Beste " + newAanmelding.getFirstName() + " " + newAanmelding.getLastName() + ",\n\nBedankt voor je inschrijving voor de open dag van 11 april 2018.\nWij zien je graag op deze dag!!\n\nHogeschool Rotterdam";
                 final String recipient = newAanmelding.getMail();
                 final String senderMail = sender.getUser();
 
                 final String recipientSignup = sender.getUser();
-                final String subjectSignup = "Nieuwe inschrijving Open Dag 2 november";
+                final String subjectSignup = "Nieuwe inschrijving Open Dag 11 april";
 
-                final String body = "Er is een nieuwe inschrijving gedaan voor 2 november:\n\nNaam: "+ newAanmelding.getFirstName() + " " + newAanmelding.getLastName() +
+                final String body = "Er is een nieuwe inschrijving gedaan voor 11 april:\n\nNaam: "+ newAanmelding.getFirstName() + " " + newAanmelding.getLastName() +
                         "\nE-mail: " + newAanmelding.getMail() + "\nVorige opleiding: " + newAanmelding.getEducation() + "\nTelefoon nummer: " + newAanmelding.getPhone() + "\n";
 
 

@@ -1,17 +1,28 @@
 <resources>
-    <string name="app_name">Open Dag</string>
+    <string name="app_name">HR Opendagen</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="beschrijvingopendag">Klassikale overzicht, voorbeelden van projecten,, workshops, overige activiteiten</string>
-    <string name="opendag1">4 april 2019 | 16.00 - 20.00 uur </string>
+    <string name="beschrijvingopendag">Klassikale overzicht, voorbeelden van projecten, workshops, overige activiteiten</string>
+    <string name="opendag1">2 november 2019 | 17:00 - 20:00 uur </string>
+    <string name="opendag2">2 februari 2020 | 17:00 - 20:00 uur </string>
+    <string name="opendag3">11 april 2020 | 17:00 - 20:00 uur </string>
+    <string name="Overzicht_titel">Overzicht</string>
     <string name="Overzicht">Overzicht Open Dagen</string>
     <string name="opleidingen">Overzicht Opleidingen</string>
-    <string name="welkomstbericht">Welkom bij de open dagen app, medemogelijk gemaakt door de studenten van de opleiding Informatica</string>
+    <string name="welkomstbericht">Welkom bij de Open Dagen app!</string>
+    <string name="home">Hoofdpagina</string>
 
+    <string name="mail_verzonden">Mail is verzonden</string>
+    <string name="inschrijftitel">U heeft zich succesvol ingeschreven. \nWilt u de open dag delen ? \nU kunt gebruik maken van de knoppen hieronden. \nDe terug knop brengt u terug naar de homepagina</string>
+
+
+    <string name="detail_titel">Details open dag</string>
     <string name="detail_aanmelden">Meld je nu aan voor deze open dag  </string>
     <string name="detail_informatie">Zie meer informatie over deze open dag</string>
     <string name="detail_intro">Een bacheloropleiding is een vierjarige opleiding op hbo-niveau. Na het behalen van je diploma ga je werken of studeer je verder aan een masteropleiding.</string>
-    <string name="detail_title">CMI | 11 april 2019 | 16:00 ~ 20:00</string>
+    <string name="detail_title">CMI | 2 november 2019 | 16:00 ~ 20:00</string>
+    <string name="detail_title2">CMI | 2 februari 2020 | 17:00 ~ 20:00</string>
+    <string name="detail_title3">CMI | 11 april 2020 | 17:00 ~ 20:00</string>
     <string name="detail_infotitle">Programma open dag</string>
     <string name="detail_klassikale_voorlichting">Klassikale voorlichting</string>
 
@@ -25,14 +36,11 @@
 18.15 uur\n
 18.45 uur\n</string>
     <string name="detail_project_title">Voorbeelden van projecten</string>
-    <string name="detail_project_data">Studenten Informatica hebben het studielandschap op de 4e etage ingericht met voorbeelden van hun projecten en vertellen je hier graag iets over.\n
-
-    16.00 - 20.00 uur doorlopend</string>
+    <string name="detail_project_data">Studenten Informatica hebben het studielandschap op de 4e etage ingericht met voorbeelden van hun projecten en vertellen je hier graag iets over.\n\n16.00 - 20.00 uur doorlopend</string>
     <string name="detail_workshop_title">Workshops</string>
-    <string name="detail_workshop_data">Je kunt een workshop volgen. Je ervaart dan zelf wat je onder andere leert tijdens de opleiding.\n
-
-16.00 - 20.00 uur doorlopend</string>
+    <string name="detail_workshop_data">Je kunt een workshop volgen. Je ervaart dan zelf wat je onder andere leert tijdens de opleiding.\n\n16.00 - 20.00 uur doorlopend</string>
     <string name="detail_overige_title">Overige activiteiten</string>
+    <string name="detail_studievoorlichting">Studievoorlichting is hét aanspreekpunt voor informatie over alle opleidingen, toelatingseisen en de aanmeldprocedure. Ook is hier praktische informatie te krijgen over toelatingsexamens, voorbereidingscursussen, buitenlandse diploma’s, proefstuderen en studiekosten. De studievoorlichters kunnen je tevens helpen als je nog twijfels hebt over je studiekeuze, bijvoorbeeld met een workshop of een individueel studiekeuzetraject.</string>
 
 
     <string name="meld_je_nu_aan_voor_een_open_dag">Meld je nu aan voor deze open dag!</string>
@@ -63,6 +71,32 @@
     <string name="btnetage3">Derde etage</string>
     <string name="btnetage4">Vierde etage</string>
     <string name="btnetage5">Vijfde etage</string>
+
+    <string name="Infocmd"> Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/opleidingen/bachelor/communicatie/deeltijd/</string>
+    <string name="cmdverhaal">Je wilt vanuit je huidige functie als marketingmedewerker of communicatieadviseur graag doorgroeien naar een managementfunctie, maar daarvoor wordt wel een bachelordiploma gevraagd.</string>
+    <string name="cmtverhaal">Heb je een scherp oog en oor voor de verhalen van mensen en merken? Ben je creatief met tekst en beeld en gefascineerd door de wereld van media? Dan is de opleiding Communicatie iets voor jou!</string>
+    <string name="infdverhaal">Ben jij toe aan de volgende stap in je loopbaan waarbij je je onder andere bezig houdt met softwaresystemen, informatiesystemen of telematicatoepassingen?</string>
+    <string name="inftverhaal">We leiden je op tot software engineer. Je gaat aan de slag met het ontwikkelen van software voor diverse toepassingen. Je bent in staat complexe ICT-systemen te analyseren, ontwerpen en implementeren.</string>
+    <string name="cmdt">Als CMD’er ontwerp je interactieve producten en diensten. Dat doe je met een creatief team voor échte opdrachtgevers in Studio’s en Labs.</string>
+    <string name="techinft">Als technisch informaticus werk je aan moderne ICT-systemen waarbij hard- en software geïntegreerd zijn. Dankzij je kennis van programmeren en hardware kun je juist op het snijpunt daarvan opereren.</string>
+    <string name="cmgtverhaal">Als CMGT\'er ben je een developer (programmeur) van interactieve digitale producten: je ontwikkelt web- en mobiele applicaties en je kent de basis van het ontwikkelen van games. De grenzen tussen deze digitale producten en de fysieke wereld vervagen echter steeds meer en steeds sneller. Je wordt daarom niet opgeleid als specialist in 1 specifieke programmeertaal of platform maar als een flexibele programmeur die zichzelf snel de mogelijkheden van een nieuwe taal of een nieuw platform (smartphone, game console, Internet of Things) eigen kan maken. Met als doel interactieve oplossingen voor klanten te bedenken en ontwikkelen die platform en programmeertaal ontstijgen.</string>
+    <string name="webp">Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/hogeschool/locaties/wijnhaven-107/</string>
+    <string name="dop">Deeltijd opleidingen</string>
+    <string name="vop">Voltijd opleidingen</string>
+    <string name="comd">Communicatie deeltijd</string>
+    <string name="infd">Informatica deeltijd</string>
+    <string name="comv">Communicatie voltijd</string>
+    <string name="cmdv">Communication and Multimedia Design voltijd</string>
+    <string name="infv">Informatica voltijd</string>
+    <string name="tinf">Technische Informatica voltijd</string>
+    <string name="cmgt">Creative Media and Game Technologies</string>
+    <string name="terug">Terug</string>
+    <string name="comvlink">Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/opleidingen/bachelor/communicatie/voltijd/</string>
+    <string name="infdt">Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/opleidingen/bachelor/informatica/deeltijd/</string>
+    <string name="infvt">Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/opleidingen/bachelor/informatica/voltijd/</string>
+    <string name="Techlink">Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/opleidingen/bachelor/technische-informatica/voltijd/</string>
+    <string name="cmdlink">Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/opleidingen/bachelor/communication-and-multimedia-design/voltijd/</string>
+    <string name="cmgtlink">Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/opleidingen/bachelor/communication-and-multimedia-design/voltijd/</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

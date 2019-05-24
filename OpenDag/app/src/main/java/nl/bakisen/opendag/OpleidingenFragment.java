@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 public class OpleidingenFragment extends Fragment {
-    Button communicatiedeel, Informaticadeel, communicatievol, CMDvol, informaticavol, techinformaticavol;
+    Button communicatiedeel, Informaticadeel, communicatievol, CMDvol, informaticavol, techinformaticavol,cmgtvol;
 
 
     @Nullable
@@ -25,12 +25,13 @@ public class OpleidingenFragment extends Fragment {
         CMDvol = (Button) view.findViewById(R.id.CMDvol);
         informaticavol = (Button) view.findViewById(R.id.informaticavol);
         techinformaticavol = (Button) view.findViewById(R.id.techinformaticavol);
+        cmgtvol = (Button) view.findViewById(R.id.cmgtvol);
 
         communicatiedeel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction communicatiedeel = getFragmentManager().beginTransaction();
-                communicatiedeel.replace(R.id.fragment_container, new communicatiedeeltijd());
+                communicatiedeel.replace(R.id.fragment_container, new CommunicatieDTFragment());
                 communicatiedeel.addToBackStack(null).commit();
 
             }
@@ -40,7 +41,7 @@ public class OpleidingenFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction Informaticadeel = getFragmentManager().beginTransaction();
-                Informaticadeel.replace(R.id.fragment_container, new informaticadeeltijd());
+                Informaticadeel.replace(R.id.fragment_container, new InformaticaDTFragment());
                 Informaticadeel.addToBackStack(null).commit();
 
             }
@@ -50,7 +51,7 @@ public class OpleidingenFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction communicatievol = getFragmentManager().beginTransaction();
-                communicatievol.replace(R.id.fragment_container, new communicatievoltijd());
+                communicatievol.replace(R.id.fragment_container, new CommunicatieVTFragment());
                 communicatievol.addToBackStack(null).commit();
 
             }
@@ -60,7 +61,7 @@ public class OpleidingenFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction CMDvol = getFragmentManager().beginTransaction();
-                CMDvol.replace(R.id.fragment_container, new CMD());
+                CMDvol.replace(R.id.fragment_container, new CMDVTFragment());
                 CMDvol.addToBackStack(null).commit();
 
             }
@@ -70,7 +71,7 @@ public class OpleidingenFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction informaticavol = getFragmentManager().beginTransaction();
-                informaticavol.replace(R.id.fragment_container, new informaticavoltijd());
+                informaticavol.replace(R.id.fragment_container, new InformaticaVTFragment());
                 informaticavol.addToBackStack(null).commit();
 
             }
@@ -80,8 +81,18 @@ public class OpleidingenFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction techinformaticavol = getFragmentManager().beginTransaction();
-                techinformaticavol.replace(R.id.fragment_container, new Techinformatica());
+                techinformaticavol.replace(R.id.fragment_container, new TechnischeInformaticaVTFragment());
                 techinformaticavol.addToBackStack(null).commit();
+
+            }
+        });
+
+        cmgtvol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction cmgtvol = getFragmentManager().beginTransaction();
+                cmgtvol.replace(R.id.fragment_container, new CMGTFragment());
+                cmgtvol.addToBackStack(null).commit();
 
             }
         });

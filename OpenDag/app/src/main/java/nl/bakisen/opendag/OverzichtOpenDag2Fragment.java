@@ -1,9 +1,10 @@
 package nl.bakisen.opendag;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +16,7 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class OverzichtOpenDag1Fragment extends Fragment {
+public class OverzichtOpenDag2Fragment extends Fragment {
     int counter = 1;
     Button btn1, btn2, btn3, btn4, revealButton, aanmelden, agenda;
     ImageButton instaKnop, faceKnop, twitterKnop, linkedKnop;
@@ -28,7 +29,7 @@ public class OverzichtOpenDag1Fragment extends Fragment {
 
 
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_overzichtopendag1, container, false);
+        View view = inflater.inflate(R.layout.fragment_overzichtopendag2, container, false);
 
 //        toont en verbergt de informatie van de open dag
         revealButton = (Button) view.findViewById(R.id.informatie_toggle);
@@ -102,10 +103,10 @@ public class OverzichtOpenDag1Fragment extends Fragment {
                 Calendar beginTime = calendarEvent.getInstance();
                 long startMillis = 0;
                 long endMillis = 0;
-                beginTime.set(2019,10,2,16,55);
+                beginTime.set(2020,1,2,16,55);
                 startMillis = beginTime.getTimeInMillis();
                 Calendar endTime = calendarEvent.getInstance();
-                endTime.set(2019,10,2,20,00);
+                endTime.set(2020,1,2,20,00);
                 endMillis = endTime.getTimeInMillis();
                 Intent i = new Intent(Intent.ACTION_EDIT);
                 i.setType("vnd.android.cursor.item/event");
@@ -124,9 +125,13 @@ public class OverzichtOpenDag1Fragment extends Fragment {
         aanmelden.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+
                 FragmentTransaction fraanmeldenOpendag = getFragmentManager().beginTransaction();
                 fraanmeldenOpendag.replace(R.id.fragment_container, new InschrijvenFragment());
                 fraanmeldenOpendag.addToBackStack(null).commit();
+
             }
         });
 
