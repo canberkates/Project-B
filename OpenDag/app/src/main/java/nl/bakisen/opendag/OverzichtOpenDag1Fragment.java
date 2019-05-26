@@ -113,7 +113,7 @@ public class OverzichtOpenDag1Fragment extends Fragment {
                 i.putExtra("rule", "FREQ=YEARLY");
                 i.putExtra("endTime", endMillis);
                 i.putExtra("title", "Open dag Hogeschool Rotterdam");
-                i.putExtra("eventLocation", "Wijnhaven 107");
+                i.putExtra("eventLocation", "Wijnhaven 107, Rotterdam");
                 startActivity(i);
             }
 

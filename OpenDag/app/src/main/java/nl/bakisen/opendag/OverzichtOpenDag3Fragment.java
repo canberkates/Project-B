@@ -103,10 +103,10 @@ public class OverzichtOpenDag3Fragment extends Fragment {
                 Calendar beginTime = calendarEvent.getInstance();
                 long startMillis = 0;
                 long endMillis = 0;
-                beginTime.set(2020,5,10,16,55);
+                beginTime.set(2020,3,11,16,55);
                 startMillis = beginTime.getTimeInMillis();
                 Calendar endTime = calendarEvent.getInstance();
-                endTime.set(2020,5,10,20,00);
+                endTime.set(2020,3,11,20,00);
                 endMillis = endTime.getTimeInMillis();
                 Intent i = new Intent(Intent.ACTION_EDIT);
                 i.setType("vnd.android.cursor.item/event");
@@ -114,7 +114,7 @@ public class OverzichtOpenDag3Fragment extends Fragment {
                 i.putExtra("rule", "FREQ=YEARLY");
                 i.putExtra("endTime", endMillis);
                 i.putExtra("title", "Open dag Hogeschool Rotterdam");
-                i.putExtra("eventLocation", "Wijnhaven 107");
+                i.putExtra("eventLocation", "Wijnhaven 107, Rotterdam");
                 startActivity(i);
             }
 

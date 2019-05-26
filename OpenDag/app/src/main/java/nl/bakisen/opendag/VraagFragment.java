@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import nl.bakisen.opendag.Domain.GMailSender;
 import nl.bakisen.opendag.Domain.Vraag;
@@ -47,9 +48,14 @@ public class VraagFragment extends Fragment {
                 newVraag = new Vraag(firstName, lastName, email, question);
 
                 final String subject = "Vraag over een open dag";
-                final String body = "Er is een nieuwe vraag ingezonden.\n\n " + newVraag.getFirstName() + " " + newVraag.getLastName() + " stelde de vraag: \n\n" + newVraag.getQuestion() + "\n\nVraag beantwoorden kan via het volgende e-mailadres: " + newVraag.getMail();
+                final String body = "Hallo " + newVraag.getFirstName() + " " + newVraag.getLastName() + ",\n\nBedankt voor jouw vraag. Wij zullen zo spoedig mogelijk met een antwoord komen.\n" +
+                        "heb je nog een andere vraag, stuur dat dan door via de applicatie.\n\nMet vriendelijke groet,\nHR Opendagen";
                 final String recipient = newVraag.getMail();
                 final String senderMail = sender.getUser();
+                final String bodySender = "Er is een nieuwe vraag ingezonden.\n" + newVraag.getFirstName() + " " + newVraag.getLastName() + " stelde de vraag: \n\n" + newVraag.getQuestion() + "\n\nVraag beantwoorden kan via het volgende e-mailadres: " + newVraag.getMail();
+
+
+
 
                 new AsyncTask<Void, Void, Void>() {
                     @Override
@@ -60,9 +66,19 @@ public class VraagFragment extends Fragment {
                         } catch (Exception e) {
                             Log.e("SendMail", e.getMessage(), e);
                         }
+
+                        try {
+                            sender.sendMail(subject,bodySender, senderMail, senderMail);
+                            System.out.println("sending to: " + senderMail);
+                        } catch (Exception e) {
+                            Log.e("SendMail",e.getMessage(), e);
+                        }
                         return null;
                     }
                 }.execute();
+
+                Toast.makeText(getContext(),"Je vraag is ontvangen bij ons. Je krijgt zo spoedig mogelijk een antwoord.",Toast.LENGTH_SHORT).show();
+
                 FragmentTransaction home = getFragmentManager().beginTransaction();
                 home.replace(R.id.fragment_container, new HomeFragment());
                 home.commit();

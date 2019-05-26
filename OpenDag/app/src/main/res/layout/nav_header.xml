@@ -4,14 +4,24 @@
     android:layout_height="176dp"
     android:layout_gravity="bottom"
     android:background="@color/hrrood"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher_round" />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/opendaglogo"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Opendagen\nHR"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"/>
+
 
 
 </LinearLayout>
