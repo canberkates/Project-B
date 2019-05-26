@@ -10,6 +10,9 @@ import android.widget.RelativeLayout;
 public class Pop extends Activity {
 
     int background;
+    private ImageView zoombackground;
+    private Float scale = 1f;
+    private ScaleGestureDetector SGD;
 
     protected void onCreate(Bundle savedInstanceState){
 
@@ -18,6 +21,11 @@ public class Pop extends Activity {
         setContentView(R.layout.popwindow);
         Bundle extras = getIntent().getExtras();
         RelativeLayout layout = findViewById(R.id.popwindow);
+        zoombackground = (ImageView) findViewById(R.id.zoombackground);
+        
+
+        SGD = new ScaleGestureDetector(this, new ScaleListener());
+
         if (extras != null) {
             background = extras.getInt("plattegrond");
         }
@@ -55,5 +63,24 @@ public class Pop extends Activity {
         params.y = -20;
 
         getWindow().setAttributes(params);
+
+
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent ev){
+        SGD.onTouchEvent(ev);
+        return true;
+    }
+
+    private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener{
+        @Override
+        public boolean onScale(ScaleGestureDetector detector){
+            scale = scale * detector.getScaleFactor();
+            scale = Math.max(0.1f, Math.min(scale, 5.0f));
+            zoombackground.setScaleX(scale);
+            zoombackground.setScaleY(scale);
+            return true;
+        }
     }
 }
