@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 public class OpleidingenFragment extends Fragment {
-    Button communicatiedeel, Informaticadeel, communicatievol, CMDvol, informaticavol, techinformaticavol;
+    Button communicatiedeel, Informaticadeel, communicatievol, CMDvol, informaticavol, techinformaticavol,cmgtvol;
 
 
     @Nullable
@@ -25,6 +25,7 @@ public class OpleidingenFragment extends Fragment {
         CMDvol = (Button) view.findViewById(R.id.CMDvol);
         informaticavol = (Button) view.findViewById(R.id.informaticavol);
         techinformaticavol = (Button) view.findViewById(R.id.techinformaticavol);
+        cmgtvol = (Button) view.findViewById(R.id.cmgtvol);
 
         communicatiedeel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +83,16 @@ public class OpleidingenFragment extends Fragment {
                 FragmentTransaction techinformaticavol = getFragmentManager().beginTransaction();
                 techinformaticavol.replace(R.id.fragment_container, new TechnischeInformaticaVTFragment());
                 techinformaticavol.addToBackStack(null).commit();
+
+            }
+        });
+
+        cmgtvol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction cmgtvol = getFragmentManager().beginTransaction();
+                cmgtvol.replace(R.id.fragment_container, new CMGTFragment());
+                cmgtvol.addToBackStack(null).commit();
 
             }
         });

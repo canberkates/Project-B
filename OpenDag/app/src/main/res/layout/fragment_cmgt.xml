@@ -33,15 +33,13 @@
             android:textColor="@color/black"
             android:layout_marginStart="20dp"
             android:textSize="16sp"
-            android:text="@string/infd" />
+            android:text="@string/cmgt" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="300dp"
             android:layout_height="10dp"
             app:srcCompat="@drawable/boxtransparent" />
-
-
 
         <TextView
             android:id="@+id/textView19"
@@ -51,7 +49,8 @@
             android:layout_marginTop="10dp"
             android:textSize="16sp"
             android:textColor="@color/black"
-            android:text="@string/infdverhaal" />
+            android:text="@string/cmgtverhaal" />
+
 
         <TextView
             android:id="@+id/textView3"
@@ -59,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:text="@string/infdt" />
+            android:text="@string/cmgtlink" />
 
         <Button
             android:id="@+id/backbutton"

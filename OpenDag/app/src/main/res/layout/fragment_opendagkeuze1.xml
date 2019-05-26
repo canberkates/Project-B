@@ -17,44 +17,10 @@
             android:textAlignment="center"
             android:padding="10dp"
             android:textStyle="bold"
-            android:text="@string/opleidingen"
+            android:text="Keuzeopendagen"
             android:textColor="@color/white"
             android:background="@color/hrrood"
             android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:text="@string/dop" />
-
-
-        <Button
-            android:id="@+id/communicatiedeel"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn_rounded"
-            android:layout_gravity="center"
-            android:layout_width="160dp"
-            android:textStyle="bold"
-            android:layout_height="wrap_content"
-            android:text="@string/comd"
-            android:textColor="@color/white"/>
-
-
-        <Button
-            android:id="@+id/Informaticadeel"
-            android:background="@drawable/btn_rounded"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="@string/infd"
-            android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/textView30"
@@ -65,74 +31,63 @@
             android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="16sp"
-            android:text="@string/vop" />
+            android:text="2 November 2019 \n 17:00 - 20:00" />
 
         <Button
-            android:id="@+id/communicatievol"
+            android:id="@+id/commopen"
+            android:layout_marginTop="30dp"
             android:background="@drawable/btn_rounded"
             android:layout_gravity="center"
             android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="@string/comv"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Communicatie"
             android:textColor="@color/white"/>
 
 
         <Button
-            android:id="@+id/CMDvol"
+            android:id="@+id/Infopen"
             android:background="@drawable/btn_rounded"
             android:layout_gravity="center"
-            android:layout_width="160dp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_height="wrap_content"
-            android:text="@string/cmdv"
-            android:textColor="@color/white"/>
-
-        <Button
-            android:id="@+id/informaticavol"
-            android:background="@drawable/btn_rounded"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="@string/infv"
+            android:text="Informatica"
             android:textColor="@color/white"/>
 
         <Button
-            android:id="@+id/techinformaticavol"
+            android:id="@+id/CMDopen"
             android:background="@drawable/btn_rounded"
             android:layout_gravity="center"
             android:layout_width="160dp"
-            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:text="Communication and Multimedia Design"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/techopen"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:layout_marginTop="30dp"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="@string/tinf"
+            android:text="Technische Informatica"
             android:textColor="@color/white"/>
 
         <Button
-            android:id="@+id/cmgtvol"
+            android:id="@+id/cmgtopen"
             android:background="@drawable/btn_rounded"
             android:layout_gravity="center"
             android:textStyle="bold"
             android:layout_width="160dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:layout_height="wrap_content"
             android:text="@string/cmgt"
             android:textColor="@color/white"/>
-
-        <TextView
-            android:id="@+id/textView3"
-            android:autoLink="all"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:text="@string/webp" />
-
 
     </LinearLayout>
 </ScrollView>

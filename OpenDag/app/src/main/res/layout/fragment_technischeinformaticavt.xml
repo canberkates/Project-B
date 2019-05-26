@@ -33,15 +33,13 @@
             android:textColor="@color/black"
             android:layout_marginStart="20dp"
             android:textSize="16sp"
-            android:text="Technische Informatica" />
+            android:text="@string/tinf" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="300dp"
             android:layout_height="10dp"
             app:srcCompat="@drawable/boxtransparent" />
-
-
 
         <TextView
             android:id="@+id/textView19"
@@ -51,11 +49,7 @@
             android:layout_marginTop="10dp"
             android:textSize="16sp"
             android:textColor="@color/black"
-            android:text="Als technisch informaticus werk je aan moderne ICT-systemen waarbij hard- en software geïntegreerd zijn. Dankzij je kennis van programmeren en hardware kun je juist op het snijpunt daarvan opereren." />
-
-
-
-
+            android:text="@string/techinft" />
 
         <TextView
             android:id="@+id/textView3"
@@ -63,7 +57,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:text="Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/opleidingen/bachelor/technische-informatica/voltijd/" />
+            android:text="@string/Techlink" />
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="145dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_rounded"
+            android:text="@string/terug"
+            android:textColor="@color/white" />
 
 
     </LinearLayout>

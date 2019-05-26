@@ -33,15 +33,13 @@
             android:textColor="@color/black"
             android:layout_marginStart="20dp"
             android:textSize="16sp"
-            android:text="Informatica voltijd" />
+            android:text="@string/infv" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="300dp"
             android:layout_height="10dp"
             app:srcCompat="@drawable/boxtransparent" />
-
-
 
         <TextView
             android:id="@+id/textView19"
@@ -51,8 +49,7 @@
             android:layout_marginTop="10dp"
             android:textSize="16sp"
             android:textColor="@color/black"
-            android:text="We leiden je op tot software engineer. Je gaat aan de slag met het ontwikkelen van software voor diverse toepassingen. Je bent in staat complexe ICT-systemen te analyseren, ontwerpen en implementeren." />
-
+            android:text="@string/inftverhaal" />
 
         <TextView
             android:id="@+id/textView3"
@@ -60,7 +57,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:text="Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/opleidingen/bachelor/informatica/voltijd/" />
+            android:text="@string/infvt" />
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="145dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_rounded"
+            android:text="@string/terug"
+            android:textColor="@color/white" />
 
 
     </LinearLayout>
