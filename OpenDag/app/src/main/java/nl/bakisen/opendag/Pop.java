@@ -34,22 +34,28 @@ public class Pop extends Activity {
         }
 
         if (background == 1) {
-            layout.setBackgroundResource(R.drawable.beganegrond);
+            zoombackground.setImageResource(R.drawable.beganegrond);
+            /*layout.setBackgroundResource(R.drawable.beganegrond);*/
         }
         else if (background == 2) {
-            layout.setBackgroundResource(R.drawable.etage1);
+            zoombackground.setImageResource(R.drawable.etage1);
+            /*layout.setBackgroundResource(R.drawable.etage1);*/
         }
         else if (background == 3) {
-            layout.setBackgroundResource(R.drawable.etage2);
+            zoombackground.setImageResource(R.drawable.etage2);
+            /*layout.setBackgroundResource(R.drawable.etage2);*/
         }
         else if (background == 4) {
-            layout.setBackgroundResource(R.drawable.etage3);
+            zoombackground.setImageResource(R.drawable.etage3);
+            /*layout.setBackgroundResource(R.drawable.etage3);*/
         }
         else if (background == 5) {
-            layout.setBackgroundResource(R.drawable.etage4);
+            zoombackground.setImageResource(R.drawable.etage4);
+            /*layout.setBackgroundResource(R.drawable.etage4);*/
         }
         else if (background == 6) {
-            layout.setBackgroundResource(R.drawable.etage5);
+            zoombackground.setImageResource(R.drawable.etage5);
+            /*layout.setBackgroundResource(R.drawable.etage5);*/
         }
 
         DisplayMetrics dm = new DisplayMetrics();
