@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fropendag1 = getFragmentManager().beginTransaction();
-                fropendag1.replace(R.id.fragment_container, new OverzichtOpenDag1Fragment());
+                fropendag1.replace(R.id.fragment_container, new opendagkeuze1Fragment());
                 fropendag1.addToBackStack(null).commit();
             }
         });

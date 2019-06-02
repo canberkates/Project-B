@@ -2,8 +2,8 @@ package nl.bakisen.opendag;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class OpenDag1CommFragment extends Fragment {
+public class OpenDag3InformaticavtFragment extends Fragment {
     int counter = 1;
     Button btn1, btn2, btn3, btn4, revealButton, aanmelden, agenda;
     ImageButton instaKnop, faceKnop, twitterKnop, linkedKnop;
@@ -28,7 +28,8 @@ public class OpenDag1CommFragment extends Fragment {
 
 
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_overzichtopendag1comm, container, false);
+        View view = inflater.inflate(R.layout.fragment_overzichtopendag3informaticavt
+                , container, false);
 
 //        toont en verbergt de informatie van de open dag
         revealButton = (Button) view.findViewById(R.id.informatie_toggle);
@@ -102,10 +103,10 @@ public class OpenDag1CommFragment extends Fragment {
                 Calendar beginTime = calendarEvent.getInstance();
                 long startMillis = 0;
                 long endMillis = 0;
-                beginTime.set(2019,10,2,16,55);
+                beginTime.set(2020,3,11,16,55);
                 startMillis = beginTime.getTimeInMillis();
                 Calendar endTime = calendarEvent.getInstance();
-                endTime.set(2019,10,2,20,00);
+                endTime.set(2020,3,11,20,00);
                 endMillis = endTime.getTimeInMillis();
                 Intent i = new Intent(Intent.ACTION_EDIT);
                 i.setType("vnd.android.cursor.item/event");
