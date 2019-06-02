@@ -1,7 +1,5 @@
 package nl.bakisen.opendag;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -14,7 +12,7 @@ import android.widget.Button;
 
 
 public class opendagkeuze3Fragment extends Fragment {
-    Button commopen3, Infopen3, CMDopen3, techopen3, cmgtopen3;
+    Button commopenvt3, commopendt3, Infopenvt3, Infopendt3, CMDopen3, techopen3, cmgtopen3;
 
     @Nullable
     @Override
@@ -22,28 +20,48 @@ public class opendagkeuze3Fragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_opendagkeuze3, container, false);
 
-        commopen3= (Button) view.findViewById(R.id.commopen3);
-        Infopen3= (Button) view.findViewById(R.id.Infopen3);
+        commopenvt3= (Button) view.findViewById(R.id.commopenvt3);
+        commopendt3= (Button) view.findViewById(R.id.commopendt3);
+        Infopenvt3= (Button) view.findViewById(R.id.Infopenvt3);
+        Infopendt3= (Button) view.findViewById(R.id.Infopendt3);
         CMDopen3= (Button) view.findViewById(R.id.CMDopen3);
         techopen3= (Button) view.findViewById(R.id.techopen3);
         cmgtopen3= (Button) view.findViewById(R.id.cmgtopen3);
 
 
-        commopen3.setOnClickListener(new View.OnClickListener() {
+        commopenvt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction commopen3 = getFragmentManager().beginTransaction();
-                commopen3.replace(R.id.fragment_container, new OpenDag3CommFragment());
-                commopen3.addToBackStack(null).commit();
+                FragmentTransaction commopenvt3 = getFragmentManager().beginTransaction();
+                commopenvt3.replace(R.id.fragment_container, new OpenDag3CommvtFragment());
+                commopenvt3.addToBackStack(null).commit();
             }
         });
 
-        Infopen3.setOnClickListener(new View.OnClickListener() {
+        commopendt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction Infopen3 = getFragmentManager().beginTransaction();
-                Infopen3.replace(R.id.fragment_container, new OpenDag3InformaticaFragment());
-                Infopen3.addToBackStack(null).commit();
+                FragmentTransaction commopendt3 = getFragmentManager().beginTransaction();
+                commopendt3.replace(R.id.fragment_container, new OpenDag3CommdtFragment());
+                commopendt3.addToBackStack(null).commit();
+            }
+        });
+
+        Infopenvt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction Infopenvt3 = getFragmentManager().beginTransaction();
+                Infopenvt3.replace(R.id.fragment_container, new OpenDag3InformaticavtFragment());
+                Infopenvt3.addToBackStack(null).commit();
+            }
+        });
+
+        Infopendt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction Infopendt3 = getFragmentManager().beginTransaction();
+                Infopendt3.replace(R.id.fragment_container, new OpenDag3InformaticadtFragment());
+                Infopendt3.addToBackStack(null).commit();
             }
         });
 

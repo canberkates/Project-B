@@ -1,6 +1,5 @@
 package nl.bakisen.opendag;
 
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -16,7 +15,7 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class OpenDag2InformaticaFragment extends Fragment {
+public class OpenDag2InformaticadtFragment extends Fragment {
     int counter = 1;
     Button btn1, btn2, btn3, btn4, revealButton, aanmelden, agenda;
     ImageButton instaKnop, faceKnop, twitterKnop, linkedKnop;
@@ -29,7 +28,7 @@ public class OpenDag2InformaticaFragment extends Fragment {
 
 
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_overzichtopendag2informatica, container, false);
+        View view = inflater.inflate(R.layout.fragment_overzichtopendag2informaticadt, container, false);
 
 //        toont en verbergt de informatie van de open dag
         revealButton = (Button) view.findViewById(R.id.informatie_toggle);

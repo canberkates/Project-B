@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class OpenDag1InformaticaFragment extends Fragment {
+public class OpenDag1CommvtFragment extends Fragment {
     int counter = 1;
     Button btn1, btn2, btn3, btn4, revealButton, aanmelden, agenda;
     ImageButton instaKnop, faceKnop, twitterKnop, linkedKnop;
@@ -28,7 +28,7 @@ public class OpenDag1InformaticaFragment extends Fragment {
 
 
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_overzichtopendag1informatica, container, false);
+        View view = inflater.inflate(R.layout.fragment_overzichtopendag1commvt, container, false);
 
 //        toont en verbergt de informatie van de open dag
         revealButton = (Button) view.findViewById(R.id.informatie_toggle);
