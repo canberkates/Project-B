@@ -23,9 +23,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
         LinearLayout banner = (LinearLayout) findViewById(R.id.banner);
         banner.getBackground().setAlpha(128);
 

@@ -3,11 +3,18 @@ package nl.bakisen.opendag;
 import android.app.Activity;
 import android.graphics.Matrix;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -19,6 +26,7 @@ public class Pop extends Activity {
     private ImageView zoombackground;
     private Float scale = 1f;
     private ScaleGestureDetector SGD;
+    Button backtoContact;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -71,6 +79,15 @@ public class Pop extends Activity {
         params.y = -20;
 
         getWindow().setAttributes(params);
+
+        backtoContact = (Button) findViewById(R.id.backtoContact);
+        backtoContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+
+            }
+        });
 
 
     }

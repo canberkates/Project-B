@@ -2,13 +2,13 @@
     <string name="app_name">HR Opendagen</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="beschrijvingopendag">Klassikale overzicht, voorbeelden van projecten, workshops, overige activiteiten</string>
+    <string name="beschrijvingopendag">Elke datum bevat de volgende informatie:\nKlassikale overzicht, voorbeelden van projecten, workshops, overige activiteiten</string>
     <string name="opendag1">2 november 2019 | 17:00 - 20:00 uur </string>
     <string name="opendag2">2 februari 2020 | 17:00 - 20:00 uur </string>
     <string name="opendag3">11 april 2020 | 17:00 - 20:00 uur </string>
     <string name="Overzicht_titel">Overzicht</string>
     <string name="Overzicht">Overzicht Open Dagen</string>
-    <string name="opleidingen">Overzicht Opleidingen</string>
+    <string name="opleidingen">Opleidingen</string>
     <string name="welkomstbericht">Welkom bij de Open Dagen app!</string>
     <string name="home">Hoofdpagina</string>
 

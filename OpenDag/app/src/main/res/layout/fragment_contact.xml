@@ -59,7 +59,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:background="@color/buttonColor"
+                android:background="@drawable/btn_rounded"
                 android:layout_marginEnd="55dp"
                 android:text="route beschrijving"
                 android:layout_marginStart="25dp"
@@ -148,7 +148,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:textSize="12sp"
                     android:text="@string/btnbeganegrond"
-                    android:background="@color/buttonColor"
+                    android:background="@drawable/btn_rounded"
                     android:textColor="@color/white"/>
 
                 <Button
@@ -158,7 +158,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:textSize="12sp"
                     android:text="@string/btnetage1"
-                    android:background="@color/buttonColor"
+                    android:background="@drawable/btn_rounded"
                     android:textColor="@color/white"/>
 
                 <Button
@@ -168,7 +168,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:textSize="12sp"
                     android:text="@string/btnetage2"
-                    android:background="@color/buttonColor"
+                    android:background="@drawable/btn_rounded"
                     android:textColor="@color/white"/>
 
                 <Button
@@ -178,7 +178,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:textSize="12sp"
                     android:text="@string/btnetage3"
-                    android:background="@color/buttonColor"
+                    android:background="@drawable/btn_rounded"
                     android:textColor="@color/white"/>
 
                 <Button
@@ -188,7 +188,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:textSize="12sp"
                     android:text="@string/btnetage4"
-                    android:background="@color/buttonColor"
+                    android:background="@drawable/btn_rounded"
                     android:textColor="@color/white"/>
 
                 <Button
@@ -198,7 +198,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:textSize="12sp"
                     android:text="@string/btnetage5"
-                    android:background="@color/buttonColor"
+                    android:background="@drawable/btn_rounded"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </HorizontalScrollView>

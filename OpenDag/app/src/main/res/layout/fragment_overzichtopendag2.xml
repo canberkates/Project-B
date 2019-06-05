@@ -205,7 +205,7 @@
                         android:layout_width="150dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/btn_rounded"
+                        android:background="@drawable/btn_rounded_active"
                         android:textSize="12sp"
                         android:textColor="@color/white"
                         android:text="Studievoorlichting"/>
@@ -238,7 +238,7 @@
                         android:background="@drawable/btn_rounded"
                         android:textSize="12sp"
                         android:textColor="@color/white"
-                        android:text="Inschrijven"/>
+                        android:text="Inschrijf info"/>
 
                 </LinearLayout>
 
@@ -264,10 +264,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_height="64dp"
+                android:layout_marginBottom="30dp"
                 android:gravity="center"
-                android:layout_marginBottom="30dp">
+                android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/instaKnop"
@@ -292,9 +292,6 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/button_socials_twitter" />
-
-
-
 
             </LinearLayout>
 
