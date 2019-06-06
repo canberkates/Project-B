@@ -34,6 +34,7 @@ public class Pop extends Activity {
         Bundle extras = getIntent().getExtras();
         RelativeLayout layout = findViewById(R.id.popwindow);
         zoombackground = (ImageView) findViewById(R.id.zoombackground);
+        zoombackground.setImageResource(R.drawable.beganegrond);
 
 
         SGD = new ScaleGestureDetector(this, new ScaleListener());
@@ -71,7 +72,7 @@ public class Pop extends Activity {
         int width = dm.widthPixels;
         int height = dm.heightPixels;
 
-        getWindow().setLayout((int)(width),(int)(height*.8));
+        getWindow().setLayout((int)(width),(int)(height*.7));
 
         WindowManager.LayoutParams params = getWindow().getAttributes();
         params.gravity = Gravity.CENTER;

@@ -208,9 +208,10 @@
             android:id="@+id/plattegrond"
             android:layout_width="300dp"
             android:layout_height="200dp"
-            android:layout_marginTop="20dp"
             android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             tools:srcCompat="@drawable/beganegrond" />
+
 
 
     </LinearLayout>
