@@ -34,7 +34,7 @@ public class Pop extends Activity {
         Bundle extras = getIntent().getExtras();
         RelativeLayout layout = findViewById(R.id.popwindow);
         zoombackground = (ImageView) findViewById(R.id.zoombackground);
-        zoombackground.setImageResource(R.drawable.beganegrond);
+        zoombackground.setImageResource(R.drawable.beganegrondv);
 
 
         SGD = new ScaleGestureDetector(this, new ScaleListener());
@@ -43,27 +43,27 @@ public class Pop extends Activity {
         }
 
         if (background == 1) {
-            zoombackground.setImageResource(R.drawable.beganegrond);
+            zoombackground.setImageResource(R.drawable.beganegrondv);
             /*layout.setBackgroundResource(R.drawable.beganegrond);*/
         }
         else if (background == 2) {
-            zoombackground.setImageResource(R.drawable.etage1);
+            zoombackground.setImageResource(R.drawable.etage1v);
             /*layout.setBackgroundResource(R.drawable.etage1);*/
         }
         else if (background == 3) {
-            zoombackground.setImageResource(R.drawable.etage2);
+            zoombackground.setImageResource(R.drawable.etage2v);
             /*layout.setBackgroundResource(R.drawable.etage2);*/
         }
         else if (background == 4) {
-            zoombackground.setImageResource(R.drawable.etage3);
+            zoombackground.setImageResource(R.drawable.etage3v);
             /*layout.setBackgroundResource(R.drawable.etage3);*/
         }
         else if (background == 5) {
-            zoombackground.setImageResource(R.drawable.etage4);
+            zoombackground.setImageResource(R.drawable.etage4v);
             /*layout.setBackgroundResource(R.drawable.etage4);*/
         }
         else if (background == 6) {
-            zoombackground.setImageResource(R.drawable.etage5);
+            zoombackground.setImageResource(R.drawable.etage5v);
             /*layout.setBackgroundResource(R.drawable.etage5);*/
         }
         DisplayMetrics dm = new DisplayMetrics();
