@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Keuze open dagen"
+            android:textColor="@color/white"
+            android:background="@color/hrrood"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="2 November 2019 \n 17:00 - 20:00" />
+
+        <Button
+            android:id="@+id/commopenvt"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Communicatie Voltijd"
+            android:textColor="@color/white"/>
+
+
+        <Button
+            android:id="@+id/commopendt"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Communicatie Deeltijd"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/Infopenvt"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Informatica Voltijd"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/Infopendt"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Informatica Deeltijd"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/CMDopen"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:text="Communication and Multimedia Design"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/techopen"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Technische Informatica"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/cmgtopen"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_width="160dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cmgt"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>

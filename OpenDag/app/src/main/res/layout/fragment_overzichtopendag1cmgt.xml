@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OverzichtOpenDag1Fragment"
+    android:background="@color/white">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/hrrood"
+            android:padding="10dp"
+            android:text="@string/detail_opendag_cmgt"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/detail_klassikale_voorlichting"
+            android:textStyle="bold"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/detail_klassikale_voorlichting_cmgt"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/detail_voorbeelden_projecten"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/detail_voorbeelden_projecten_cmgt"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/informatie_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/detail_infotitle"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+
+                android:layout_marginStart="25dp"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/detail_klassikale_voorlichting"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/detail_voorlichting_data"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/detail_voorbeelden_projecten"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/detail_project_data"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/detail_workshop_title"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/detail_workshop_data"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/calender_button"
+                android:layout_width="330dp"
+
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_rounded"
+                android:text="Zet het nu op je agenda"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/aanmeldknop_opendag"
+                android:layout_width="330dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_rounded"
+                android:text="@string/detail_aanmelden"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/informatie_toggle"
+                android:layout_width="330dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_rounded"
+                android:text="@string/detail_informatie"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+
+                android:text="@string/detail_overige_title"
+                android:textStyle="bold"
+                android:textSize="23sp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buttonstudievoorlichting"
+                        android:layout_width="150dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_rounded_active"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:text="Studievoorlichting"/>
+
+                    <Button
+                        android:id="@+id/buttonstudentaanzet"
+                        android:layout_width="150dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_rounded"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:text="Student aan Zet"/>
+
+                    <Button
+                        android:id="@+id/buttontoelatingsexamen"
+                        android:layout_width="150dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_rounded"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:text="Toelatingsexamen"/>
+
+                    <Button
+                        android:id="@+id/buttoninschrijving"
+                        android:layout_width="150dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_rounded"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:text="Inschrijf info"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textoverigeinfo"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/detail_studievoorlichting" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Deel deze opendag!"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/instaKnop"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_socials_instagram" />
+
+                <ImageButton
+                    android:id="@+id/faceKnop"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_socials_facebook" />
+
+                <ImageButton
+                    android:id="@+id/twitterKnop"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_socials_twitter" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
