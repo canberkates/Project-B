@@ -17,18 +17,6 @@
             android:id="@+id/nav_opleidingen"
             android:icon="@drawable/ic_opleidingen"
             android:title="Opleidingen" />
-
-        <item
-            android:title=""/>
-        <item
-            android:title=""/>
-        <item
-            android:title=""/>
-        <item
-            android:title=""/>
-        <item
-            android:title=""/>
-
         <item
             android:id="@+id/nav_vraag"
             android:icon="@drawable/ic_vraag"
