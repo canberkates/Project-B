@@ -7,9 +7,7 @@
     android:layout_height="wrap_content"
     android:layout_width="match_parent">
 
-
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".OverzichtFragment"
@@ -31,7 +29,17 @@
             android:layout_marginTop="40dp"
             android:text="@string/Overzicht"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/beschrijvingopendag"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/opendag1"
@@ -44,59 +52,28 @@
             android:textColor="@color/white"
             android:background="@drawable/btn_rounded"/>
 
-        <TextView
-            android:layout_width="410dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="1dp"
-            android:text="@string/beschrijvingopendag"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:textStyle="bold"/>
-
         <Button
             android:id="@+id/opendag2"
             android:layout_width="330dp"
             android:layout_height="96dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:text="@string/opendag2"
             android:textSize="17sp"
             android:textColor="@color/white"
             android:background="@drawable/btn_rounded"/>
-
-        <TextView
-            android:layout_width="410dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="1dp"
-            android:text="@string/beschrijvingopendag"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/opendag3"
             android:layout_width="330dp"
             android:layout_height="96dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
             android:text="@string/opendag3"
             android:textSize="17sp"
             android:textColor="@color/white"
             android:background="@drawable/btn_rounded"/>
-
-        <TextView
-            android:layout_width="410dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="1dp"
-            android:text="@string/beschrijvingopendag"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:textStyle="bold"/>
-
-
 
     </LinearLayout>
 </ScrollView>

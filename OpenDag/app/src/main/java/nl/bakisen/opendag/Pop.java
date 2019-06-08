@@ -3,11 +3,18 @@ package nl.bakisen.opendag;
 import android.app.Activity;
 import android.graphics.Matrix;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -19,6 +26,7 @@ public class Pop extends Activity {
     private ImageView zoombackground;
     private Float scale = 1f;
     private ScaleGestureDetector SGD;
+    Button backtoContact;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -26,6 +34,7 @@ public class Pop extends Activity {
         Bundle extras = getIntent().getExtras();
         RelativeLayout layout = findViewById(R.id.popwindow);
         zoombackground = (ImageView) findViewById(R.id.zoombackground);
+        zoombackground.setImageResource(R.drawable.beganegrondv);
 
 
         SGD = new ScaleGestureDetector(this, new ScaleListener());
@@ -34,27 +43,27 @@ public class Pop extends Activity {
         }
 
         if (background == 1) {
-            zoombackground.setImageResource(R.drawable.beganegrond);
+            zoombackground.setImageResource(R.drawable.beganegrondv);
             /*layout.setBackgroundResource(R.drawable.beganegrond);*/
         }
         else if (background == 2) {
-            zoombackground.setImageResource(R.drawable.etage1);
+            zoombackground.setImageResource(R.drawable.etage1v);
             /*layout.setBackgroundResource(R.drawable.etage1);*/
         }
         else if (background == 3) {
-            zoombackground.setImageResource(R.drawable.etage2);
+            zoombackground.setImageResource(R.drawable.etage2v);
             /*layout.setBackgroundResource(R.drawable.etage2);*/
         }
         else if (background == 4) {
-            zoombackground.setImageResource(R.drawable.etage3);
+            zoombackground.setImageResource(R.drawable.etage3v);
             /*layout.setBackgroundResource(R.drawable.etage3);*/
         }
         else if (background == 5) {
-            zoombackground.setImageResource(R.drawable.etage4);
+            zoombackground.setImageResource(R.drawable.etage4v);
             /*layout.setBackgroundResource(R.drawable.etage4);*/
         }
         else if (background == 6) {
-            zoombackground.setImageResource(R.drawable.etage5);
+            zoombackground.setImageResource(R.drawable.etage5v);
             /*layout.setBackgroundResource(R.drawable.etage5);*/
         }
         DisplayMetrics dm = new DisplayMetrics();
@@ -63,7 +72,7 @@ public class Pop extends Activity {
         int width = dm.widthPixels;
         int height = dm.heightPixels;
 
-        getWindow().setLayout((int)(width),(int)(height*.8));
+        getWindow().setLayout((int)(width),(int)(height*.7));
 
         WindowManager.LayoutParams params = getWindow().getAttributes();
         params.gravity = Gravity.CENTER;
@@ -71,6 +80,15 @@ public class Pop extends Activity {
         params.y = -20;
 
         getWindow().setAttributes(params);
+
+        backtoContact = (Button) findViewById(R.id.backtoContact);
+        backtoContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+
+            }
+        });
 
 
     }

@@ -67,6 +67,12 @@ public class OpenDag3InformaticadtFragment extends Fragment {
             public void onClick(View v) {
                 txt1.setText(Studievoorlichting);
                 btn1.setVisibility(View.VISIBLE);
+
+                btn1.setBackgroundResource(R.drawable.btn_rounded_active);
+                btn2.setBackgroundResource(R.drawable.btn_rounded);
+                btn3.setBackgroundResource(R.drawable.btn_rounded);
+                btn4.setBackgroundResource(R.drawable.btn_rounded);
+
             }
         });
 
@@ -75,6 +81,12 @@ public class OpenDag3InformaticadtFragment extends Fragment {
             public void onClick(View v) {
                 txt1.setText(StudentAanZet);
                 btn1.setVisibility(View.VISIBLE);
+
+                btn1.setBackgroundResource(R.drawable.btn_rounded);
+                btn2.setBackgroundResource(R.drawable.btn_rounded_active);
+                btn3.setBackgroundResource(R.drawable.btn_rounded);
+                btn4.setBackgroundResource(R.drawable.btn_rounded);
+
             }
         });
 
@@ -83,6 +95,12 @@ public class OpenDag3InformaticadtFragment extends Fragment {
             public void onClick(View v) {
                 txt1.setText(Toelatingsexamen);
                 btn1.setVisibility(View.VISIBLE);
+
+                btn1.setBackgroundResource(R.drawable.btn_rounded);
+                btn2.setBackgroundResource(R.drawable.btn_rounded);
+                btn3.setBackgroundResource(R.drawable.btn_rounded_active);
+                btn4.setBackgroundResource(R.drawable.btn_rounded);
+
             }
         });
 
@@ -91,6 +109,12 @@ public class OpenDag3InformaticadtFragment extends Fragment {
             public void onClick(View v) {
                 txt1.setText(Inschrijving);
                 btn1.setVisibility(View.VISIBLE);
+
+                btn1.setBackgroundResource(R.drawable.btn_rounded);
+                btn2.setBackgroundResource(R.drawable.btn_rounded);
+                btn3.setBackgroundResource(R.drawable.btn_rounded);
+                btn4.setBackgroundResource(R.drawable.btn_rounded_active);
+
             }
         });
 

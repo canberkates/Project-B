@@ -47,6 +47,7 @@ public class ContactFragment extends Fragment {
         btnetage3 = (Button) view.findViewById(R.id.btnetage3);
         btnetage4 = (Button) view.findViewById(R.id.btnetage4);
         btnetage5 = (Button) view.findViewById(R.id.btnetage5);
+        plattegrond.setImageResource(images[0]);
 
         googlemaps.setOnClickListener(new View.OnClickListener() {
             @Override

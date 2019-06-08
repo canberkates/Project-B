@@ -8,6 +8,12 @@
     android:background="@color/white"
     android:id="@+id/popwindow">
 
+    <Button
+        android:id="@+id/backtoContact"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/back"/>
+
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"

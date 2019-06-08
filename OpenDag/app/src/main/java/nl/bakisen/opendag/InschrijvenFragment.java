@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import nl.bakisen.opendag.Database.DatabaseTask;
 import nl.bakisen.opendag.Domain.Aanmelding;
 import nl.bakisen.opendag.Domain.GMailSender;
 
@@ -27,10 +28,10 @@ public class InschrijvenFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_inschrijven, container, false);
+        final View view = inflater.inflate(R.layout.fragment_inschrijven, container, false);
 
         final EditText inputGender = view.findViewById(R.id.inputGender) ;
         final EditText inputName = view.findViewById(R.id.inputName);
@@ -82,7 +83,7 @@ public class InschrijvenFragment extends Fragment {
 
                         try {
                             sender.sendMail(subjectSignup, body,senderMail, recipientSignup);
-                            System.out.println("sending to: " + newAanmelding.getMail());
+                            System.out.println("sending to: " + senderMail);
                         } catch (Exception e) {
                             Log.e("SendMail", e.getMessage(), e);
                         }
@@ -90,7 +91,7 @@ public class InschrijvenFragment extends Fragment {
 
                     }
                 }.execute();
-
+                
 
                 FragmentTransaction home = getFragmentManager().beginTransaction();
                 home.replace(R.id.fragment_container, new MailOntvangenFragment());
@@ -100,4 +101,7 @@ public class InschrijvenFragment extends Fragment {
 
         return view;
     }
+
+
+
 }

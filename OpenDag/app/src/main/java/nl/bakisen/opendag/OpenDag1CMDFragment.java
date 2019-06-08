@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -66,6 +67,12 @@ public class OpenDag1CMDFragment extends Fragment {
             public void onClick(View v) {
                 txt1.setText(Studievoorlichting);
                 btn1.setVisibility(View.VISIBLE);
+
+                btn1.setBackgroundResource(R.drawable.btn_rounded_active);
+                btn2.setBackgroundResource(R.drawable.btn_rounded);
+                btn3.setBackgroundResource(R.drawable.btn_rounded);
+                btn4.setBackgroundResource(R.drawable.btn_rounded);
+
             }
         });
 
@@ -74,6 +81,12 @@ public class OpenDag1CMDFragment extends Fragment {
             public void onClick(View v) {
                 txt1.setText(StudentAanZet);
                 btn1.setVisibility(View.VISIBLE);
+
+                btn1.setBackgroundResource(R.drawable.btn_rounded);
+                btn2.setBackgroundResource(R.drawable.btn_rounded_active);
+                btn3.setBackgroundResource(R.drawable.btn_rounded);
+                btn4.setBackgroundResource(R.drawable.btn_rounded);
+
             }
         });
 
@@ -82,6 +95,12 @@ public class OpenDag1CMDFragment extends Fragment {
             public void onClick(View v) {
                 txt1.setText(Toelatingsexamen);
                 btn1.setVisibility(View.VISIBLE);
+
+                btn1.setBackgroundResource(R.drawable.btn_rounded);
+                btn2.setBackgroundResource(R.drawable.btn_rounded);
+                btn3.setBackgroundResource(R.drawable.btn_rounded_active);
+                btn4.setBackgroundResource(R.drawable.btn_rounded);
+
             }
         });
 
@@ -90,6 +109,12 @@ public class OpenDag1CMDFragment extends Fragment {
             public void onClick(View v) {
                 txt1.setText(Inschrijving);
                 btn1.setVisibility(View.VISIBLE);
+
+                btn1.setBackgroundResource(R.drawable.btn_rounded);
+                btn2.setBackgroundResource(R.drawable.btn_rounded);
+                btn3.setBackgroundResource(R.drawable.btn_rounded);
+                btn4.setBackgroundResource(R.drawable.btn_rounded_active);
+
             }
         });
 
