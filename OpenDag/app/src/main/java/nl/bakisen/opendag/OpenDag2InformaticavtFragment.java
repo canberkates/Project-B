@@ -152,7 +152,7 @@ public class OpenDag2InformaticavtFragment extends Fragment {
 
 
                 FragmentTransaction fraanmeldenOpendag = getFragmentManager().beginTransaction();
-                fraanmeldenOpendag.replace(R.id.fragment_container, new InschrijvenFragment());
+                fraanmeldenOpendag.replace(R.id.fragment_container, new Inschrijven2Fragment());
                 fraanmeldenOpendag.addToBackStack(null).commit();
 
             }
