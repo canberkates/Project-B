@@ -1,5 +1,6 @@
 package nl.bakisen.opendag;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,16 +14,16 @@ import android.widget.ImageButton;
 
 import java.util.Calendar;
 
-public class MailOntvangenFragment extends Fragment {
 
+public class Mailontvangen2Fragment extends Fragment {
     ImageButton instaKnop, faceKnop, twitterKnop;
     Button home, agenda;
 
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_mailontvangen, container, false);
+        View view = inflater.inflate(R.layout.fragment_mailontvangen2, container, false);
 
         home = (Button) view.findViewById(R.id.backtohome);
-        agenda = (Button) view.findViewById(R.id.calender_button);
+        agenda = (Button) view.findViewById(R.id.calender_button2);
         instaKnop = (ImageButton) view.findViewById(R.id.instaKnop);
         twitterKnop = (ImageButton) view.findViewById(R.id.twitterKnop);
         faceKnop = (ImageButton) view.findViewById(R.id.faceKnop);
@@ -82,10 +83,10 @@ public class MailOntvangenFragment extends Fragment {
                 Calendar beginTime = calendarEvent.getInstance();
                 long startMillis = 0;
                 long endMillis = 0;
-                beginTime.set(2019,10,2,16,55);
+                beginTime.set(2020,1,2,16,55);
                 startMillis = beginTime.getTimeInMillis();
                 Calendar endTime = calendarEvent.getInstance();
-                endTime.set(2019,10,2,20,00);
+                endTime.set(2020,1,2,20,00);
                 endMillis = endTime.getTimeInMillis();
                 Intent i = new Intent(Intent.ACTION_EDIT);
                 i.setType("vnd.android.cursor.item/event");

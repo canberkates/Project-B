@@ -16,8 +16,7 @@ import android.widget.TextView;
 import java.util.Calendar;
 
 public class OpenDag3CommvtFragment extends Fragment {
-    int counter = 1;
-    Button btn1, btn2, btn3, btn4, revealButton, aanmelden, agenda;
+    Button btn1, btn2, btn3, btn4, revealButton, aanmelden;
     ImageButton instaKnop, faceKnop, twitterKnop, linkedKnop;
     TextView txt1;
     String Studievoorlichting = "Studievoorlichting is hét aanspreekpunt voor informatie over alle opleidingen, toelatingseisen en de aanmeldprocedure. Ook is hier praktische informatie te krijgen over toelatingsexamens, voorbereidingscursussen, buitenlandse diploma’s, proefstuderen en studiekosten. De studievoorlichters kunnen je tevens helpen als je nog twijfels hebt over je studiekeuze, bijvoorbeeld met een workshop of een individueel studiekeuzetraject.";
@@ -30,29 +29,6 @@ public class OpenDag3CommvtFragment extends Fragment {
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_overzichtopendag3commvt
                 , container, false);
-
-//        toont en verbergt de informatie van de open dag
-        revealButton = (Button) view.findViewById(R.id.informatie_toggle);
-        final LinearLayout infoLayout = (LinearLayout) view.findViewById(R.id.informatie_layout);
-
-        revealButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switch (counter) {
-                    case 1:
-                        infoLayout.setVisibility(View.VISIBLE);
-                        counter += 1;
-                        break;
-                    case 2:
-                        infoLayout.setVisibility(View.GONE);
-                        counter -= 1;
-                        break;
-                    default:
-                        infoLayout.setVisibility(View.GONE);
-                        break;
-                }
-            }
-        });
 
 //        past overige informatie aan dat aansluit op de titel
         txt1 = (TextView) view.findViewById(R.id.textoverigeinfo);
@@ -118,31 +94,6 @@ public class OpenDag3CommvtFragment extends Fragment {
             }
         });
 
-        agenda = (Button) view.findViewById(R.id.calender_button);
-        agenda.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Calendar calendarEvent = Calendar.getInstance();
-                Calendar beginTime = calendarEvent.getInstance();
-                long startMillis = 0;
-                long endMillis = 0;
-                beginTime.set(2020,3,11,16,55);
-                startMillis = beginTime.getTimeInMillis();
-                Calendar endTime = calendarEvent.getInstance();
-                endTime.set(2020,3,11,20,00);
-                endMillis = endTime.getTimeInMillis();
-                Intent i = new Intent(Intent.ACTION_EDIT);
-                i.setType("vnd.android.cursor.item/event");
-                i.putExtra("beginTime", startMillis);
-                i.putExtra("rule", "FREQ=YEARLY");
-                i.putExtra("endTime", endMillis);
-                i.putExtra("title", "Open dag Hogeschool Rotterdam");
-                i.putExtra("eventLocation", "Wijnhaven 107, Rotterdam");
-                startActivity(i);
-            }
-
-        });
 
 //        naar volgende fragment
         aanmelden = (Button) view.findViewById(R.id.aanmeldknop_opendag);

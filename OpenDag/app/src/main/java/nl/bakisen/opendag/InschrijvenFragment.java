@@ -88,7 +88,7 @@ public class InschrijvenFragment extends Fragment implements AdapterView.OnItemS
                         &&(inputLastname.getText().toString().trim().matches((namePattern))))) {
                     Toast.makeText(getContext(),"Je registratie voor de open dag is geslaagd! Je krijgt zo spoedig mogelijk een antwoord.",Toast.LENGTH_SHORT).show();
                     FragmentTransaction home = getFragmentManager().beginTransaction();
-                    home.replace(R.id.fragment_container, new HomeFragment());
+                    home.replace(R.id.fragment_container, new MailOntvangenFragment());
                     home.commit();
                 }else {
                     if(inputMail.getText().toString().isEmpty()||(inputDateBirth.getText().toString().isEmpty()||(inputName.getText().toString().isEmpty()||(inputLastname.toString().isEmpty())))) {

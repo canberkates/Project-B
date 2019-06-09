@@ -18,7 +18,7 @@ import java.util.Calendar;
 
 public class OpenDag2CMDFragment extends Fragment {
     int counter = 1;
-    Button btn1, btn2, btn3, btn4, revealButton, aanmelden, agenda;
+    Button btn1, btn2, btn3, btn4, revealButton, aanmelden;
     ImageButton instaKnop, faceKnop, twitterKnop, linkedKnop;
     TextView txt1;
     String Studievoorlichting = "Studievoorlichting is hét aanspreekpunt voor informatie over alle opleidingen, toelatingseisen en de aanmeldprocedure. Ook is hier praktische informatie te krijgen over toelatingsexamens, voorbereidingscursussen, buitenlandse diploma’s, proefstuderen en studiekosten. De studievoorlichters kunnen je tevens helpen als je nog twijfels hebt over je studiekeuze, bijvoorbeeld met een workshop of een individueel studiekeuzetraject.";
