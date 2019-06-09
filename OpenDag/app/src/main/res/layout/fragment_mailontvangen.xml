@@ -90,7 +90,8 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/btn_rounded"
             android:text="Zet het nu op je agenda"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:layout_marginBottom="30dp"/>
 
 
     </LinearLayout>

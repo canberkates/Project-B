@@ -32,8 +32,8 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
 
     @Override
     protected void onPreExecute() {
-        dialog = new AlertDialog.Builder(ctx).create();
-        dialog.setTitle("Login Status");
+//        dialog = new AlertDialog.Builder(ctx).create();
+//        dialog.setTitle("Login Status");
     }
 
     @Override
