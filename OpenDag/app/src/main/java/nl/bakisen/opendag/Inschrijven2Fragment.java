@@ -25,6 +25,9 @@ public class Inschrijven2Fragment extends Fragment {
 
     String gender, name, lastName, phone, email, education, date, chosenEducation;
     Aanmelding newAanmelding;
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    String namePattern ="[a-zA-Z]+";
+    String DoBPattern = "^(3[01]|[12][0-9]|0[1-9])/(1[0-2]|0[1-9])/[0-9]{4}$";
 
 
 
@@ -77,6 +80,42 @@ public class Inschrijven2Fragment extends Fragment {
                 date = inputDateBirth.getText().toString();
                 education = inputEducation.getText().toString();
 
+
+                if (inputMail.getText().toString().trim().matches(emailPattern)
+                        &&(inputDateBirth.getText().toString().trim().matches(DoBPattern))
+                        && (inputName.getText().toString().trim().matches(namePattern)
+                        &&(inputLastname.getText().toString().trim().matches((namePattern))))) {
+                    Toast.makeText(getContext(),"Je registratie voor de open dag is geslaagd! Je krijgt zo spoedig mogelijk een antwoord.",Toast.LENGTH_SHORT).show();
+                    FragmentTransaction home = getFragmentManager().beginTransaction();
+                    home.replace(R.id.fragment_container, new HomeFragment());
+                    home.commit();
+                }else {
+                    if(inputMail.getText().toString().isEmpty()||(inputDateBirth.getText().toString().isEmpty()||(inputName.getText().toString().isEmpty()||(inputLastname.toString().isEmpty())))) {
+                        if (inputMail.getText().toString().isEmpty()){
+                            Toast.makeText(getContext(),"Vul uw Email-adres in",Toast.LENGTH_SHORT).show();
+                        } else if (inputDateBirth.getText().toString().isEmpty()) {
+                            Toast.makeText(getContext(),"Vul uw geboortedatum in",Toast.LENGTH_SHORT).show();
+                        } else if (inputName.getText().toString().isEmpty()) {
+                            Toast.makeText(getContext(),"Vul uw naam in",Toast.LENGTH_SHORT).show();
+                        } else if (inputLastname.getText().toString().isEmpty()) {
+                            Toast.makeText(getContext(),"Vul uw achternaam in",Toast.LENGTH_SHORT).show();
+                        }
+                    }else if(!inputMail.getText().toString().matches(emailPattern)
+                            ||(!inputDateBirth.getText().toString().matches(DoBPattern)
+                            ||(!inputName.getText().toString().matches(namePattern)
+                            ||(!inputLastname.getText().toString().matches(namePattern))))){
+                        if (!inputMail.getText().toString().matches(emailPattern)) {
+                            Toast.makeText(getContext(),"Vul een geldige email-adres in",Toast.LENGTH_SHORT).show();
+                        } else if (!inputName.getText().toString().matches(namePattern)) {
+                            Toast.makeText(getContext(),"Vul een geldige naam in",Toast.LENGTH_SHORT).show();
+                        }else if (!inputLastname.getText().toString().matches(namePattern)) {
+                            Toast.makeText(getContext(), "Vul een geldige achternaam in", Toast.LENGTH_SHORT).show();
+                        }else if (!inputDateBirth.getText().toString().matches(DoBPattern)) {
+                            Toast.makeText(getContext(), "Vul een geldig geboortedatum in in de gegeven formaat: DD/MM/YYYY", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+
                 String method = "insert data februari";
                 BackgroundTask bgtask = new BackgroundTask(v.getContext());
                 bgtask.execute(method, gender, name, lastName, phone, email, date, education, chosenEducation);
@@ -115,11 +154,6 @@ public class Inschrijven2Fragment extends Fragment {
 
                     }
                 }.execute();
-
-
-                FragmentTransaction home = getFragmentManager().beginTransaction();
-                home.replace(R.id.fragment_container, new MailOntvangenFragment());
-                home.commit();
             }
         });
 
