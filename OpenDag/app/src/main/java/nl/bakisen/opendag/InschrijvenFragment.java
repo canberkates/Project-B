@@ -7,17 +7,16 @@ import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-<<<<<<< HEAD
-=======
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
->>>>>>> Enes
+
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-<<<<<<< HEAD
+
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -31,7 +30,7 @@ public class InschrijvenFragment extends Fragment implements AdapterView.OnItemS
 
     String gender, name, lastName, phone, email, education, date, chosenEducation;
     Aanmelding newAanmelding;
-=======
+
 import android.widget.Toast;
 
 import nl.bakisen.opendag.Database.DatabaseTask;
@@ -45,7 +44,6 @@ public class InschrijvenFragment extends Fragment {
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     String namePattern ="[a-zA-Z]+";
     String DoBPattern = "^(3[01]|[12][0-9]|0[1-9])/(1[0-2]|0[1-9])/[0-9]{4}$";
->>>>>>> Enes
 
 
 
@@ -63,7 +61,7 @@ public class InschrijvenFragment extends Fragment {
         final EditText inputDateBirth = view.findViewById(R.id.inputDateBirth);
         final EditText inputEducation = view.findViewById(R.id.inputEducation);
 
-<<<<<<< HEAD
+
         Spinner educationSpinner = (Spinner)view.findViewById(R.id.educationSpinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.education_array, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -82,8 +80,7 @@ public class InschrijvenFragment extends Fragment {
 
             }
         });
-=======
->>>>>>> Enes
+
 
         Button signUpButton;
 
@@ -101,11 +98,11 @@ public class InschrijvenFragment extends Fragment {
                 date = inputDateBirth.getText().toString();
                 education = inputEducation.getText().toString();
 
-<<<<<<< HEAD
+
                 String method = "insert data november";
                 BackgroundTask bgtask = new BackgroundTask(v.getContext());
                 bgtask.execute(method, gender, name, lastName, phone, email, date, education, chosenEducation);
-=======
+
 
                 if (inputMail.getText().toString().trim().matches(emailPattern)
                         &&(inputDateBirth.getText().toString().trim().matches(DoBPattern))
@@ -141,7 +138,7 @@ public class InschrijvenFragment extends Fragment {
                     }
                     }
                 }
->>>>>>> Enes
+
 
                 final GMailSender sender = new GMailSender("inschrijvenopendag@gmail.com", "Inschrijvenopendag123");
                 newAanmelding = new Aanmelding(gender, name, lastName, date, email, phone, education);
@@ -177,16 +174,12 @@ public class InschrijvenFragment extends Fragment {
 
                     }
                 }.execute();
-<<<<<<< HEAD
+
 
                 FragmentTransaction home = getFragmentManager().beginTransaction();
                 home.replace(R.id.fragment_container, new MailOntvangenFragment());
                 home.commit();
-=======
-                
 
-
->>>>>>> Enes
             }
         });
 
@@ -194,7 +187,7 @@ public class InschrijvenFragment extends Fragment {
     }
 
 
-<<<<<<< HEAD
+
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
@@ -204,7 +197,5 @@ public class InschrijvenFragment extends Fragment {
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
-=======
 
->>>>>>> Enes
 }
