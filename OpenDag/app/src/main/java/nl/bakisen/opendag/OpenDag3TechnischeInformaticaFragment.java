@@ -150,7 +150,7 @@ public class OpenDag3TechnischeInformaticaFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fraanmeldenOpendag = getFragmentManager().beginTransaction();
-                fraanmeldenOpendag.replace(R.id.fragment_container, new InschrijvenFragment());
+                fraanmeldenOpendag.replace(R.id.fragment_container, new Inschrijven3Fragment());
                 fraanmeldenOpendag.addToBackStack(null).commit();
             }
         });

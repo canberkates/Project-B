@@ -117,6 +117,16 @@
     <string name="cmdlink">Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/opleidingen/bachelor/communication-and-multimedia-design/voltijd/</string>
     <string name="cmgtlink">Voor meer informatie kunt u hier naar de website gaan:\nhttps://www.hogeschoolrotterdam.nl/opleidingen/bachelor/communication-and-multimedia-design/voltijd/</string>
 
+    <string-array name="education_array">
+        <item>Communicatie voltijd</item>
+        <item>Communicatie deeltijd</item>
+        <item>Informatica voltijd</item>
+        <item>Informatica deeltijd</item>
+        <item>Communicatie and Multimedia Design</item>
+        <item>Technische informatica</item>
+        <item>Creative Media and Game Technologies</item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
