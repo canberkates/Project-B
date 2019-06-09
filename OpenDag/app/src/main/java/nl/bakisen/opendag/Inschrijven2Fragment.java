@@ -87,7 +87,7 @@ public class Inschrijven2Fragment extends Fragment {
                         &&(inputLastname.getText().toString().trim().matches((namePattern))))) {
                     Toast.makeText(getContext(),"Je registratie voor de open dag is geslaagd! Je krijgt zo spoedig mogelijk een antwoord.",Toast.LENGTH_SHORT).show();
                     FragmentTransaction home = getFragmentManager().beginTransaction();
-                    home.replace(R.id.fragment_container, new HomeFragment());
+                    home.replace(R.id.fragment_container, new Mailontvangen2Fragment());
                     home.commit();
                 }else {
                     if(inputMail.getText().toString().isEmpty()||(inputDateBirth.getText().toString().isEmpty()||(inputName.getText().toString().isEmpty()||(inputLastname.toString().isEmpty())))) {
