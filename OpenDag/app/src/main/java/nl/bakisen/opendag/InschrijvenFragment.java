@@ -7,11 +7,17 @@ import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+<<<<<<< HEAD
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+>>>>>>> Enes
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+<<<<<<< HEAD
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -25,6 +31,21 @@ public class InschrijvenFragment extends Fragment implements AdapterView.OnItemS
 
     String gender, name, lastName, phone, email, education, date, chosenEducation;
     Aanmelding newAanmelding;
+=======
+import android.widget.Toast;
+
+import nl.bakisen.opendag.Database.DatabaseTask;
+import nl.bakisen.opendag.Domain.Aanmelding;
+import nl.bakisen.opendag.Domain.GMailSender;
+
+public class InschrijvenFragment extends Fragment {
+
+    String gender, name, lastName, phone, email, education, date;
+    Aanmelding newAanmelding;
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    String namePattern ="[a-zA-Z]+";
+    String DoBPattern = "^(3[01]|[12][0-9]|0[1-9])/(1[0-2]|0[1-9])/[0-9]{4}$";
+>>>>>>> Enes
 
 
 
@@ -42,6 +63,7 @@ public class InschrijvenFragment extends Fragment implements AdapterView.OnItemS
         final EditText inputDateBirth = view.findViewById(R.id.inputDateBirth);
         final EditText inputEducation = view.findViewById(R.id.inputEducation);
 
+<<<<<<< HEAD
         Spinner educationSpinner = (Spinner)view.findViewById(R.id.educationSpinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.education_array, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -60,6 +82,8 @@ public class InschrijvenFragment extends Fragment implements AdapterView.OnItemS
 
             }
         });
+=======
+>>>>>>> Enes
 
         Button signUpButton;
 
@@ -77,9 +101,47 @@ public class InschrijvenFragment extends Fragment implements AdapterView.OnItemS
                 date = inputDateBirth.getText().toString();
                 education = inputEducation.getText().toString();
 
+<<<<<<< HEAD
                 String method = "insert data november";
                 BackgroundTask bgtask = new BackgroundTask(v.getContext());
                 bgtask.execute(method, gender, name, lastName, phone, email, date, education, chosenEducation);
+=======
+
+                if (inputMail.getText().toString().trim().matches(emailPattern)
+                        &&(inputDateBirth.getText().toString().trim().matches(DoBPattern))
+                        && (inputName.getText().toString().trim().matches(namePattern)
+                        &&(inputLastname.getText().toString().trim().matches((namePattern))))) {
+                    Toast.makeText(getContext(),"Je registratie voor de open dag is geslaagd! Je krijgt zo spoedig mogelijk een antwoord.",Toast.LENGTH_SHORT).show();
+                    FragmentTransaction home = getFragmentManager().beginTransaction();
+                    home.replace(R.id.fragment_container, new HomeFragment());
+                    home.commit();
+                }else {
+                    if(inputMail.getText().toString().isEmpty()||(inputDateBirth.getText().toString().isEmpty()||(inputName.getText().toString().isEmpty()||(inputLastname.toString().isEmpty())))) {
+                        if (inputMail.getText().toString().isEmpty()){
+                            Toast.makeText(getContext(),"Vul uw Email-adres in",Toast.LENGTH_SHORT).show();
+                        } else if (inputDateBirth.getText().toString().isEmpty()) {
+                            Toast.makeText(getContext(),"Vul uw geboortedatum in",Toast.LENGTH_SHORT).show();
+                        } else if (inputName.getText().toString().isEmpty()) {
+                            Toast.makeText(getContext(),"Vul uw naam in",Toast.LENGTH_SHORT).show();
+                        } else if (inputLastname.getText().toString().isEmpty()) {
+                            Toast.makeText(getContext(),"Vul uw achternaam in",Toast.LENGTH_SHORT).show();
+                        }
+                    }else if (!inputMail.getText().toString().matches(emailPattern)
+                            ||(!inputDateBirth.getText().toString().matches(DoBPattern)
+                            ||(!inputName.getText().toString().matches(namePattern)
+                            ||(!inputLastname.getText().toString().matches(namePattern))))){
+                        if (!inputMail.getText().toString().matches(emailPattern)) {
+                            Toast.makeText(getContext(),"Vul een geldige email-adres in",Toast.LENGTH_SHORT).show();
+                        } else if (!inputName.getText().toString().matches(namePattern)) {
+                            Toast.makeText(getContext(),"Vul een geldige naam in",Toast.LENGTH_SHORT).show();
+                        }else if (!inputLastname.getText().toString().matches(namePattern)) {
+                            Toast.makeText(getContext(), "Vul een geldige achternaam in", Toast.LENGTH_SHORT).show();
+                        }else if (!inputDateBirth.getText().toString().matches(DoBPattern)) {
+                        Toast.makeText(getContext(), "Vul een geldig geboortedatum in in de gegeven formaat: DD/MM/YYYY", Toast.LENGTH_SHORT).show();
+                    }
+                    }
+                }
+>>>>>>> Enes
 
                 final GMailSender sender = new GMailSender("inschrijvenopendag@gmail.com", "Inschrijvenopendag123");
                 newAanmelding = new Aanmelding(gender, name, lastName, date, email, phone, education);
@@ -115,10 +177,16 @@ public class InschrijvenFragment extends Fragment implements AdapterView.OnItemS
 
                     }
                 }.execute();
+<<<<<<< HEAD
 
                 FragmentTransaction home = getFragmentManager().beginTransaction();
                 home.replace(R.id.fragment_container, new MailOntvangenFragment());
                 home.commit();
+=======
+                
+
+
+>>>>>>> Enes
             }
         });
 
@@ -126,6 +194,7 @@ public class InschrijvenFragment extends Fragment implements AdapterView.OnItemS
     }
 
 
+<<<<<<< HEAD
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
@@ -135,4 +204,7 @@ public class InschrijvenFragment extends Fragment implements AdapterView.OnItemS
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+=======
+
+>>>>>>> Enes
 }

@@ -153,7 +153,11 @@ public class OpenDag2CMGTFragment extends Fragment {
 
 
                 FragmentTransaction fraanmeldenOpendag = getFragmentManager().beginTransaction();
+<<<<<<< HEAD
                 fraanmeldenOpendag.replace(R.id.fragment_container, new Inschrijven2Fragment());
+=======
+                fraanmeldenOpendag.replace(R.id.fragment_container, new InschrijvenFragment());
+>>>>>>> Enes
                 fraanmeldenOpendag.addToBackStack(null).commit();
 
             }

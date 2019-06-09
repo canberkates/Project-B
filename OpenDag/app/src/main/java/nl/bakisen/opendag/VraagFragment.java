@@ -12,6 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+<<<<<<< HEAD
+=======
+import android.widget.TextView;
+>>>>>>> Enes
 import android.widget.Toast;
 
 import nl.bakisen.opendag.Domain.GMailSender;
@@ -21,6 +25,17 @@ public class VraagFragment extends Fragment {
 
     String firstName, lastName, email, question;
     Vraag newVraag;
+<<<<<<< HEAD
+=======
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    String namePattern ="[a-zA-Z]+";
+    String questionPattern = "[a-zA-Z]+";
+    public EditText inputName;
+    public EditText inputLastname;
+    public EditText inputMail;
+    public EditText inputQuestion;
+
+>>>>>>> Enes
 
     @Nullable
     @Override
@@ -28,6 +43,10 @@ public class VraagFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_vraag, container, false);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Enes
         final EditText inputfirstName = view.findViewById(R.id.inputName) ;
         final EditText inputlastName= view.findViewById(R.id.inputLastname);
         final EditText inputemail = view.findViewById(R.id.inputMail);
@@ -35,15 +54,57 @@ public class VraagFragment extends Fragment {
 
         Button sendButton;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Enes
         sendButton = (Button) view.findViewById(R.id.questionButton);
         sendButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Enes
                 firstName = inputfirstName.getText().toString();
                 lastName = inputlastName.getText().toString();
                 email = inputemail.getText().toString();
                 question = inputquestion.getText().toString();
 
+<<<<<<< HEAD
+=======
+                if (inputemail.getText().toString().trim().matches(emailPattern)
+                        && (inputfirstName.getText().toString().trim().matches(namePattern)
+                        &&(inputlastName.getText().toString().trim().matches((namePattern))))) {
+                    Toast.makeText(getContext(),"Je vraag is ontvangen bij ons. Je krijgt zo spoedig mogelijk een antwoord.",Toast.LENGTH_SHORT).show();
+                    FragmentTransaction home = getFragmentManager().beginTransaction();
+                    home.replace(R.id.fragment_container, new HomeFragment());
+                    home.commit();
+                }else {
+                    if(inputemail.getText().toString().isEmpty()|| inputquestion.getText().toString().isEmpty()||(inputfirstName.getText().toString().isEmpty()||(inputlastName.toString().isEmpty()))) {
+                        if (inputemail.getText().toString().isEmpty()){
+                            Toast.makeText(getContext(),"Vul uw Email-adres in",Toast.LENGTH_SHORT).show();
+                        }else if (inputquestion.getText().toString().isEmpty()) {
+                            Toast.makeText(getContext(),"Vul uw vraag in",Toast.LENGTH_SHORT).show();
+                        } else if (inputfirstName.getText().toString().isEmpty()) {
+                            Toast.makeText(getContext(),"Vul uw naam in",Toast.LENGTH_SHORT).show();
+                        } else if (inputlastName.getText().toString().isEmpty()) {
+                            Toast.makeText(getContext(),"Vul uw achternaam in",Toast.LENGTH_SHORT).show();
+                        }
+                    }else if(!inputemail.getText().toString().matches(emailPattern)
+                            ||(!inputfirstName.getText().toString().matches(namePattern)
+                            ||(!inputlastName.getText().toString().matches(namePattern)))){
+                        if (!inputemail.getText().toString().matches(emailPattern)) {
+                            Toast.makeText(getContext(),"Vul een geldige email-adres in",Toast.LENGTH_SHORT).show();
+                        } else if (!inputfirstName.getText().toString().matches(namePattern)) {
+                            Toast.makeText(getContext(),"Vul een geldige naam in",Toast.LENGTH_SHORT).show();
+                        }else if (!inputlastName.getText().toString().matches(namePattern)) {
+                            Toast.makeText(getContext(), "Vul een geldige achternaam in", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+
+>>>>>>> Enes
                 final GMailSender sender = new GMailSender("inschrijvenopendag@gmail.com", "Inschrijvenopendag123");
                 newVraag = new Vraag(firstName, lastName, email, question);
 
@@ -76,14 +137,22 @@ public class VraagFragment extends Fragment {
                         return null;
                     }
                 }.execute();
+<<<<<<< HEAD
 
                 Toast.makeText(getContext(),"Je vraag is ontvangen bij ons. Je krijgt zo spoedig mogelijk een antwoord.",Toast.LENGTH_SHORT).show();
 
                 FragmentTransaction home = getFragmentManager().beginTransaction();
                 home.replace(R.id.fragment_container, new HomeFragment());
                 home.commit();
+=======
+>>>>>>> Enes
             }
         });
         return view;
     }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> Enes
 }

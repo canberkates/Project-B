@@ -176,6 +176,7 @@
             android:layout_marginHorizontal="5dp"
             android:layout_marginVertical="5dp"/>
 
+<<<<<<< HEAD
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -189,6 +190,8 @@
 
         </Spinner>
 
+=======
+>>>>>>> Enes
         <Button
             android:id="@+id/signUpButton"
             android:layout_width="wrap_content"
@@ -198,9 +201,13 @@
             android:text="@string/verstuur"
             android:textColor="@color/white"
             android:background="@drawable/btn_rounded"
+<<<<<<< HEAD
             android:layout_marginVertical="15dp"
             android:layout_marginTop="30dp"
             android:onClick="register"/>
+=======
+            android:layout_marginVertical="15dp"/>
+>>>>>>> Enes
 
 
     </LinearLayout>

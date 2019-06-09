@@ -14,16 +14,25 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+<<<<<<< HEAD
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import nl.bakisen.opendag.Database.BackgroundTask;
+=======
+import android.widget.Toast;
+
+>>>>>>> Enes
 import nl.bakisen.opendag.Domain.Aanmelding;
 import nl.bakisen.opendag.Domain.GMailSender;
 
 public class Inschrijven2Fragment extends Fragment {
 
+<<<<<<< HEAD
     String gender, name, lastName, phone, email, education, date, chosenEducation;
+=======
+    String gender, name, lastName, phone, email, education, date;
+>>>>>>> Enes
     Aanmelding newAanmelding;
 
 
@@ -32,7 +41,11 @@ public class Inschrijven2Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+<<<<<<< HEAD
         final View view = inflater.inflate(R.layout.fragment_inschrijven, container, false);
+=======
+        View view = inflater.inflate(R.layout.fragment_inschrijven, container, false);
+>>>>>>> Enes
 
         final EditText inputGender = view.findViewById(R.id.inputGender) ;
         final EditText inputName = view.findViewById(R.id.inputName);
@@ -42,6 +55,7 @@ public class Inschrijven2Fragment extends Fragment {
         final EditText inputDateBirth = view.findViewById(R.id.inputDateBirth);
         final EditText inputEducation = view.findViewById(R.id.inputEducation);
 
+<<<<<<< HEAD
         Spinner educationSpinner = (Spinner)view.findViewById(R.id.educationSpinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.education_array, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -61,6 +75,8 @@ public class Inschrijven2Fragment extends Fragment {
             }
         });
 
+=======
+>>>>>>> Enes
         Button signUpButton;
 
         GMailSender sender = new GMailSender("inschrijvenopendag@gmail.com","Inschrijvenopendag123");
@@ -77,10 +93,13 @@ public class Inschrijven2Fragment extends Fragment {
                 date = inputDateBirth.getText().toString();
                 education = inputEducation.getText().toString();
 
+<<<<<<< HEAD
                 String method = "insert data februari";
                 BackgroundTask bgtask = new BackgroundTask(v.getContext());
                 bgtask.execute(method, gender, name, lastName, phone, email, date, education, chosenEducation);
 
+=======
+>>>>>>> Enes
                 final GMailSender sender = new GMailSender("inschrijvenopendag@gmail.com", "Inschrijvenopendag123");
                 newAanmelding = new Aanmelding(gender, name, lastName, date, email, phone, education);
                 final String subject = "Inschrijving Open Dag 2 februari";
