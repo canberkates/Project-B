@@ -239,7 +239,7 @@
                         android:background="@drawable/btn_rounded"
                         android:textSize="12sp"
                         android:textColor="@color/white"
-                        android:text="Inschrijven"/>
+                        android:text="Inschrijf info"/>
 
                 </LinearLayout>
 

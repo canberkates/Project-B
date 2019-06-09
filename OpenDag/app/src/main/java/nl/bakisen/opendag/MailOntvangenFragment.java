@@ -11,15 +11,18 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import java.util.Calendar;
+
 public class MailOntvangenFragment extends Fragment {
 
     ImageButton instaKnop, faceKnop, twitterKnop;
-    Button home;
+    Button home, agenda;
 
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_mailontvangen, container, false);
 
         home = (Button) view.findViewById(R.id.backtohome);
+        agenda = (Button) view.findViewById(R.id.calender_button);
         instaKnop = (ImageButton) view.findViewById(R.id.instaKnop);
         twitterKnop = (ImageButton) view.findViewById(R.id.twitterKnop);
         faceKnop = (ImageButton) view.findViewById(R.id.faceKnop);
@@ -71,6 +74,30 @@ public class MailOntvangenFragment extends Fragment {
             }
         });
 
+        agenda.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Calendar calendarEvent = Calendar.getInstance();
+                Calendar beginTime = calendarEvent.getInstance();
+                long startMillis = 0;
+                long endMillis = 0;
+                beginTime.set(2019,10,2,16,55);
+                startMillis = beginTime.getTimeInMillis();
+                Calendar endTime = calendarEvent.getInstance();
+                endTime.set(2019,10,2,20,00);
+                endMillis = endTime.getTimeInMillis();
+                Intent i = new Intent(Intent.ACTION_EDIT);
+                i.setType("vnd.android.cursor.item/event");
+                i.putExtra("beginTime", startMillis);
+                i.putExtra("rule", "FREQ=YEARLY");
+                i.putExtra("endTime", endMillis);
+                i.putExtra("title", "Open dag Hogeschool Rotterdam");
+                i.putExtra("eventLocation", "Wijnhaven 107, Rotterdam");
+                startActivity(i);
+            }
+
+        });
 
         return view;
     }

@@ -14,13 +14,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:padding="10dp"
-            android:textStyle="bold"
-            android:text="Keuzeopendagen"
+            android:text="Keuze open dagen"
             android:textColor="@color/white"
             android:background="@color/hrrood"
             android:textSize="20sp" />
+
 
         <TextView
             android:id="@+id/textView30"
@@ -34,26 +33,48 @@
             android:text="2 November 2019 \n 17:00 - 20:00" />
 
         <Button
-            android:id="@+id/commopen"
+            android:id="@+id/commopenvt"
             android:layout_marginTop="30dp"
             android:background="@drawable/btn_rounded"
             android:layout_gravity="center"
             android:layout_width="160dp"
             android:textStyle="bold"
             android:layout_height="wrap_content"
-            android:text="Communicatie"
+            android:text="Communicatie Voltijd"
             android:textColor="@color/white"/>
 
 
         <Button
-            android:id="@+id/Infopen"
+            android:id="@+id/commopendt"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Communicatie Deeltijd"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/Infopenvt"
             android:background="@drawable/btn_rounded"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Informatica"
+            android:text="Informatica Voltijd"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/Infopendt"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Informatica Deeltijd"
             android:textColor="@color/white"/>
 
         <Button

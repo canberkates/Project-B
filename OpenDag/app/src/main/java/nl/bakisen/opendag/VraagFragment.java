@@ -49,7 +49,7 @@ public class VraagFragment extends Fragment {
 
                 final String subject = "Vraag over een open dag";
                 final String body = "Hallo " + newVraag.getFirstName() + " " + newVraag.getLastName() + ",\n\nBedankt voor jouw vraag. Wij zullen zo spoedig mogelijk met een antwoord komen.\n" +
-                        "heb je nog een andere vraag, stuur dat dan door via de applicatie.\n\nMet vriendelijke groet,\nHR Opendagen";
+                        "Heb je nog een andere vraag, stuur dat dan door via de applicatie.\n\nMet vriendelijke groet,\nHR Opendagen";
                 final String recipient = newVraag.getMail();
                 final String senderMail = sender.getUser();
                 final String bodySender = "Er is een nieuwe vraag ingezonden.\n" + newVraag.getFirstName() + " " + newVraag.getLastName() + " stelde de vraag: \n\n" + newVraag.getQuestion() + "\n\nVraag beantwoorden kan via het volgende e-mailadres: " + newVraag.getMail();
