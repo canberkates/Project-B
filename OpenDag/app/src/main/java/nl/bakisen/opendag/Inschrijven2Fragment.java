@@ -4,6 +4,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -28,6 +30,7 @@ public class Inschrijven2Fragment extends Fragment {
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     String namePattern ="[a-zA-Z]+";
     String DoBPattern = "^(3[01]|[12][0-9]|0[1-9])/(1[0-2]|0[1-9])/[0-9]{4}$";
+    Boolean x = false;
 
 
 
@@ -44,6 +47,25 @@ public class Inschrijven2Fragment extends Fragment {
         final EditText inputMail = view.findViewById(R.id.inputMail);
         final EditText inputDateBirth = view.findViewById(R.id.inputDateBirth);
         final EditText inputEducation = view.findViewById(R.id.inputEducation);
+
+        inputDateBirth.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (s.length() == 2 || s.length() == 5) {
+                    s.append("/");
+                }
+            }
+        });
 
         Spinner educationSpinner = (Spinner)view.findViewById(R.id.educationSpinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.education_array, android.R.layout.simple_spinner_dropdown_item);
@@ -88,6 +110,7 @@ public class Inschrijven2Fragment extends Fragment {
                     Toast.makeText(getContext(),"Je registratie voor de open dag is geslaagd! Je krijgt zo spoedig mogelijk een antwoord.",Toast.LENGTH_SHORT).show();
                     FragmentTransaction home = getFragmentManager().beginTransaction();
                     home.replace(R.id.fragment_container, new Mailontvangen2Fragment());
+                    x = true;
                     home.commit();
                 }else {
                     if(inputMail.getText().toString().isEmpty()||(inputDateBirth.getText().toString().isEmpty()||(inputName.getText().toString().isEmpty()||(inputLastname.toString().isEmpty())))) {
@@ -116,44 +139,46 @@ public class Inschrijven2Fragment extends Fragment {
                     }
                 }
 
-                String method = "insert data februari";
-                BackgroundTask bgtask = new BackgroundTask(v.getContext());
-                bgtask.execute(method, gender, name, lastName, phone, email, date, education, chosenEducation);
+                if (x == true) {
+                    String method = "insert data februari";
+                    BackgroundTask bgtask = new BackgroundTask(v.getContext());
+                    bgtask.execute(method, gender, name, lastName, phone, email, date, education, chosenEducation);
 
-                final GMailSender sender = new GMailSender("inschrijvenopendag@gmail.com", "Inschrijvenopendag123");
-                newAanmelding = new Aanmelding(gender, name, lastName, date, email, phone, education);
-                final String subject = "Inschrijving Open Dag 2 februari";
-                final String bodystudent = "Beste " + newAanmelding.getFirstName() + " " + newAanmelding.getLastName() + ",\n\nBedankt voor je inschrijving voor de open dag van 2 februari 2018.\nWij zien je graag op deze dag!!\n\nHogeschool Rotterdam";
-                final String recipient = newAanmelding.getMail();
-                final String senderMail = sender.getUser();
+                    final GMailSender sender = new GMailSender("inschrijvenopendag@gmail.com", "Inschrijvenopendag123");
+                    newAanmelding = new Aanmelding(gender, name, lastName, date, email, phone, education);
+                    final String subject = "Inschrijving Open Dag 2 februari";
+                    final String bodystudent = "Beste " + newAanmelding.getFirstName() + " " + newAanmelding.getLastName() + ",\n\nBedankt voor je inschrijving voor de open dag van 2 februari 2018.\nWij zien je graag op deze dag!!\n\nHogeschool Rotterdam";
+                    final String recipient = newAanmelding.getMail();
+                    final String senderMail = sender.getUser();
 
-                final String recipientSignup = sender.getUser();
-                final String subjectSignup = "Nieuwe inschrijving Open Dag 2 februari";
+                    final String recipientSignup = sender.getUser();
+                    final String subjectSignup = "Nieuwe inschrijving Open Dag 2 februari";
 
-                final String body = "Er is een nieuwe inschrijving gedaan voor 2 februari:\n\nNaam: "+ newAanmelding.getFirstName() + " " + newAanmelding.getLastName() +
-                        "\nE-mail: " + newAanmelding.getMail() + "\nVorige opleiding: " + newAanmelding.getEducation() + "\nTelefoon nummer: " + newAanmelding.getPhone() + "\n";
+                    final String body = "Er is een nieuwe inschrijving gedaan voor 2 februari:\n\nNaam: "+ newAanmelding.getFirstName() + " " + newAanmelding.getLastName() +
+                            "\nE-mail: " + newAanmelding.getMail() + "\nVorige opleiding: " + newAanmelding.getEducation() + "\nTelefoon nummer: " + newAanmelding.getPhone() + "\n";
 
 
-                new AsyncTask<Void, Void, Void>() {
-                    @Override
-                    public Void doInBackground(Void... arg) {
-                        try {
-                            sender.sendMail(subject, bodystudent,senderMail, recipient);
-                            System.out.println("sending to: " + newAanmelding.getMail());
-                        } catch (Exception e) {
-                            Log.e("SendMail", e.getMessage(), e);
+                    new AsyncTask<Void, Void, Void>() {
+                        @Override
+                        public Void doInBackground(Void... arg) {
+                            try {
+                                sender.sendMail(subject, bodystudent,senderMail, recipient);
+                                System.out.println("sending to: " + newAanmelding.getMail());
+                            } catch (Exception e) {
+                                Log.e("SendMail", e.getMessage(), e);
+                            }
+
+                            try {
+                                sender.sendMail(subjectSignup, body,senderMail, recipientSignup);
+                                System.out.println("sending to: " + newAanmelding.getMail());
+                            } catch (Exception e) {
+                                Log.e("SendMail", e.getMessage(), e);
+                            }
+                            return null;
+
                         }
-
-                        try {
-                            sender.sendMail(subjectSignup, body,senderMail, recipientSignup);
-                            System.out.println("sending to: " + newAanmelding.getMail());
-                        } catch (Exception e) {
-                            Log.e("SendMail", e.getMessage(), e);
-                        }
-                        return null;
-
-                    }
-                }.execute();
+                    }.execute();
+                }
             }
         });
 
