@@ -62,7 +62,7 @@ public class Mailontvangen2Fragment extends Fragment {
 
                 FragmentTransaction home = getFragmentManager().beginTransaction();
                 home.replace(R.id.fragment_container, new HomeFragment());
-                home.commit();
+                home.addToBackStack(null).commit();
             }
         });
 

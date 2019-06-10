@@ -113,7 +113,7 @@ public class Inschrijven3Fragment extends Fragment {
                     FragmentTransaction home = getFragmentManager().beginTransaction();
                     home.replace(R.id.fragment_container, new Mailontvangen3Fragment());
                     x = true;
-                    home.commit();
+                    home.addToBackStack(null).commit();
                 }else {
                     if(inputMail.getText().toString().isEmpty()||(inputDateBirth.getText().toString().isEmpty()||(inputName.getText().toString().isEmpty()||(inputLastname.toString().isEmpty())))) {
                         if (inputMail.getText().toString().isEmpty()){

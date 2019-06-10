@@ -114,7 +114,7 @@ public class InschrijvenFragment extends Fragment implements AdapterView.OnItemS
                     FragmentTransaction home = getFragmentManager().beginTransaction();
                     home.replace(R.id.fragment_container, new MailOntvangenFragment());
                     x = true;
-                    home.commit();
+                    home.addToBackStack(null).commit();
                 }else {
                     if(inputMail.getText().toString().isEmpty()||(inputDateBirth.getText().toString().isEmpty()||(inputName.getText().toString().isEmpty()||(inputLastname.toString().isEmpty())))) {
                         if (inputMail.getText().toString().isEmpty()){
