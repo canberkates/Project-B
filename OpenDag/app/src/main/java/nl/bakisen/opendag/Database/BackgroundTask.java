@@ -20,6 +20,8 @@ import java.net.URLEncoder;
 
 import javax.net.ssl.HttpsURLConnection;
 
+//https://github.com/Faiizii/MySqlExample used as base
+
 public class BackgroundTask extends AsyncTask<String,Void,String> {
 
     AlertDialog dialog;
@@ -32,6 +34,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
 
     @Override
     protected void onPreExecute() {
+//        used for testing
 //        dialog = new AlertDialog.Builder(ctx).create();
 //        dialog.setTitle("Login Status");
     }
