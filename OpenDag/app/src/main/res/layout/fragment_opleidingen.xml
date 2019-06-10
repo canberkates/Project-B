@@ -26,9 +26,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:text="@string/dop" />
 
 
@@ -61,9 +60,8 @@
             android:layout_marginTop="15dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textStyle="bold"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:text="@string/vop" />
 
         <Button
