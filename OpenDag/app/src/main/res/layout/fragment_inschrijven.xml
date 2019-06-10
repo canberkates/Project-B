@@ -170,11 +170,11 @@
             android:id="@+id/inputEducation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Informatica"
-            android:inputType="text"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginVertical="5dp"/>
+            android:layout_marginVertical="5dp"
+            android:ems="10"
+            android:hint="Havo"
+            android:inputType="text" />
 
         <TextView
             android:layout_width="match_parent"
