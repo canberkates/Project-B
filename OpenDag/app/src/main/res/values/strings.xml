@@ -13,7 +13,7 @@
     <string name="home">Hoofdpagina</string>
 
     <string name="mail_verzonden">Mail is verzonden</string>
-    <string name="inschrijftitel">U heeft zich succesvol ingeschreven. \nWilt u de open dag delen ? \nU kunt gebruik maken van de knoppen hieronden. \nDe terug knop brengt u terug naar de homepagina</string>
+    <string name="inschrijftitel">U heeft zich succesvol ingeschreven. \nAls u de open dag wilt delen of op uw agenda wilt zetten\nkunt u gebruik maken van de knoppen hieronder.</string>
 
 
     <string name="detail_titel">Details open dag</string>

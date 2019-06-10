@@ -42,7 +42,7 @@ public class MailOntvangenFragment extends Fragment {
         twitterKnop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String twitter = "https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.hogeschoolrotterdam.nl%2F&text=Home%3A&original_referer=";
+                String twitter = "https://twitter.com/intent/tweet?text=Ik ga naar de open dag van hogeschool rotterdam op 2 november!&original_referer=";
                 Uri webadres = Uri.parse(twitter);
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(webadres);
