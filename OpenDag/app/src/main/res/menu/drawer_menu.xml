@@ -19,15 +19,20 @@
             android:title="Opleidingen" />
 
         <item
-            android:title=""/>
+            android:title=""
+            android:enabled="false"/>
         <item
-            android:title=""/>
+            android:title=""
+            android:enabled="false"/>
         <item
-            android:title=""/>
+            android:title=""
+            android:enabled="false"/>
         <item
-            android:title=""/>
+            android:title=""
+            android:enabled="false"/>
         <item
-            android:title=""/>
+            android:title=""
+            android:enabled="false"/>
 
         <item
             android:id="@+id/nav_vraag"
