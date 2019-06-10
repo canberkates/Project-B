@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/opleidingen"
+            android:textColor="@color/white"
+            android:background="@color/hrrood"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/dop" />
+
+
+        <Button
+            android:id="@+id/communicatiedeel"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="@string/comd"
+            android:textColor="@color/white"/>
+
+
+        <Button
+            android:id="@+id/Informaticadeel"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/infd"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="@string/vop" />
+
+        <Button
+            android:id="@+id/communicatievol"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/comv"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+
+        <Button
+            android:id="@+id/CMDvol"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cmdv"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/informaticavol"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/infv"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/techinformaticavol"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/tinf"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/cmgtvol"
+            android:background="@drawable/btn_rounded"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_width="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cmgt"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:autoLink="all"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/webp" />
+
+
+    </LinearLayout>
+</ScrollView>
