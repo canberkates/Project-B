@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VraagFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/mail_verzonden"
+            android:textColor="@color/white"
+            android:background="@color/hrrood"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            app:srcCompat="@drawable/wijnhaven" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inschrijftitel"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/instaKnop"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_socials_instagram" />
+
+            <ImageButton
+                android:id="@+id/faceKnop"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_socials_facebook" />
+
+            <ImageButton
+                android:id="@+id/twitterKnop"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_socials_twitter" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/calender_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:width="200dp"
+            android:background="@drawable/btn_rounded"
+            android:text="Zet het nu op je agenda"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/backtohome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="30dp"
+            android:width="200dp"
+            android:background="@drawable/btn_rounded"
+            android:text="@string/home"
+            android:textColor="@color/white" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>

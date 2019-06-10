@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/informatie_titel"
+            android:textColor="@color/white"
+            android:background="@color/hrrood"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/informatie_adres"/>
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/map"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/informatie_adres_gegevens"
+                android:textColor="@color/hrrood"/>
+
+            <Button
+                android:id="@+id/routeBeschrijving"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:background="@drawable/btn_rounded"
+                android:layout_marginEnd="55dp"
+                android:text="route beschrijving"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/informatie_contact"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/informatie_contact_gegevens"
+            android:textColor="@color/hrrood"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/informatie_openingstijden"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/informatie_openingstijden_gegevens1"
+                android:textColor="@color/hrrood"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/informatie_openingstijden_gegevens2"
+                android:textColor="@color/hrrood"/>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Plattegrond"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <HorizontalScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnbeganegrond"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:textSize="12sp"
+                    android:text="@string/btnbeganegrond"
+                    android:background="@drawable/btn_rounded"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btnetage1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:textSize="12sp"
+                    android:text="@string/btnetage1"
+                    android:background="@drawable/btn_rounded"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btnetage2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:textSize="12sp"
+                    android:text="@string/btnetage2"
+                    android:background="@drawable/btn_rounded"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btnetage3"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:textSize="12sp"
+                    android:text="@string/btnetage3"
+                    android:background="@drawable/btn_rounded"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btnetage4"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:textSize="12sp"
+                    android:text="@string/btnetage4"
+                    android:background="@drawable/btn_rounded"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btnetage5"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:textSize="12sp"
+                    android:text="@string/btnetage5"
+                    android:background="@drawable/btn_rounded"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <ImageView
+            android:id="@+id/plattegrond"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            tools:srcCompat="@drawable/beganegrond" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

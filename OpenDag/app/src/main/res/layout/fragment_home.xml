@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OverzichtFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/home"
+        android:textColor="@color/white"
+        android:background="@color/hrrood"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/berichtwelkom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/welkomstbericht"
+        android:textAlignment="center"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/OpkomendeDag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Eerstvolgende open dag"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/opendag1"
+        android:layout_width="330dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_rounded"
+        android:text="@string/opendag1"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/BeschikbareOpleidingen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Beschikbare Opleidingen"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/opleidingen"
+        android:layout_gravity="center"
+        android:layout_width="330dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/opleidingen"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
