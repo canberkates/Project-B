@@ -21,8 +21,8 @@
             android:id="@+id/banner"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@drawable/hr"
-            android:scaleType="fitXY">
+            android:background="@drawable/bannerovertrefjezelf">
+
 
             <ImageButton
                 android:id="@+id/homeButton"
